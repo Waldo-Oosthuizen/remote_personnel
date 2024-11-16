@@ -467,16 +467,14 @@ nav {
 .footer {
   height: auto;
   background-color: #7b113a;
-  padding: 30px;
-  margin-top: 200px;
+  margin-top: 60px;
 }
 
 .footer-col-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 90%;
-  margin: auto auto auto auto;
+
 }
 
 .footer-col {
@@ -485,16 +483,18 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
   text-align: left;
-  padding: 30px;
+  padding: 10px;
 }
 
 .footer-col h6 {
-  font-size: 30px;
+  font-size: 20px;
   color: #e5e5e5;
+  text-align: center;
 }
 
 .footer-col p {
   color: #e5e5e5;
+
 }
 
 .icons-container {
@@ -518,14 +518,15 @@ nav {
 .footer-col2 {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: left;
+ 
+  line-height: 25px;
+
 }
 
 .footer-col2 a {
   color: #f6f4eb;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .footer-col2 a:hover {
@@ -861,6 +862,8 @@ nav {
   .jobseekers-div {
     height: 60vh;
   }
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -967,12 +970,9 @@ nav {
 
   .footer-col {
     width: 90%;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+
     text-align: center;
+
   }
 
   .footer-col h6{
@@ -1011,6 +1011,10 @@ nav {
     display: flex;
     flex-direction: row;
     width: 100%;
+  }
+
+  .icons-container{
+    width: 30%;
   }
 }
 
