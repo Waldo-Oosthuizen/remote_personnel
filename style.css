@@ -498,14 +498,15 @@ nav {
 .icons-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  align-items: left;
-  margin-top: 20px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 
-.icons-container a {
-  margin-right: 30px;
-}
 
 .footer-icon {
   width: 40px;
@@ -981,13 +982,17 @@ nav {
   }
 
   .footer-col {
-    width: 60%;
+    width: 90%;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
+  }
+
+  .footer-col h6{
+    text-align: center;
   }
 
   .modalHeader {
@@ -1113,6 +1118,10 @@ nav {
   .about-div3,
   .about-div4 {
     width: 100%;
+  }
+
+  .icons-container{
+    width: 50%;
   }
 }
 
