@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Remote Personnel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav id="navbar">
+    <!--Logo-->
+    <div class="logo">
+      <a href="index.html"><img src="Images/Remote Personnel -- Logo.svg" /></a>
+    </div>
+    <!--Hamburger menu-->
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <!--nav links-->
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">CV Search</a>
+      </li>
+      <li>
+        <a href="jobs.html">Jobs</a>
+      </li>
+      <li>
+        <a href="jobseekers.html">Job Seekers</a>
+      </li>
+      <li>
+        <a href="Employers.html">Employers</a>
+      </li>
+      <li>
+        <a href="personnel-search.html">Personnel Search</a>
+      </li>
+      <li>
+        <a href="enquiries.html">Enquiries</a>
+      </li>
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="#contact"><button class="nav-btn" style="background-color: #7B113A">Sign In</button></a>
+      </li>
+    </ul>
+  </nav>
+  <!--End of Navbar-->
+
+  <div class="header">
+    <div class="jobs-header-text" style="text-align: center; width: 100%;">
+      <h1 style="color: #150E56; margin-bottom: 20px;">Company & Recruiter Registration
+      </h1>
+      <p style="font-weight: bold;">To Find a Job Click <a href="candidate_registration-page1.html"
+          style="color: #7B113A;">Here</a>
+      </p>
+
+
+    </div>
+  </div>
+
+
+  <!--Search Top Canidates form-->
+  <div class="employers-container" style="margin-top: 30px; margin-bottom: 30px;">
+
+    <div class="form">
+      <div>
+        <!--Company Details-->
+        <div class="form-headers">Company Details</div>
+        <div>
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="username" class="labelBox">Username: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" name="username" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="company" class="labelBox">Company: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="companyName" name="companyName" style="height: 30px;">
+              </div>
+
+              <div class="inputLabel">
+                <label for="websiteAddress" class="labelBox">Website Address:</label><br>
+                <input class="form-input" type="text" id="websiteAddress" name="websiteAddress" style="height: 30px;">
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="password" class="labelBox">Password:<span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="password" name="password" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Department:</label><br>
+                <input class="form-input" type="text" id="department" name="department" style="height: 30px;">
+              </div>
+              <div class="inpputLabel">
+                <div class="g-recaptcha" data-sitekey="6LfpS-kpAAAAADjsC42mBZ2K3mwDxR3tEc5OrY_B"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Department Contact Details-->
+        <div class=" form-headers">Department Contact Details:</div>
+        <div>
+
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="telephone" class="labelBox">Telephone:</label><br>
+                <input class="form-input" type="text" id="telephone" name="telephone" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="cellphone" class="labelBox">Cellphone:</label><br>
+                <input class="form-input" type="text" id="cellphone" name="cellphone" style="height: 30px;">
+              </div>
+
+              <div class="inputLabel">
+                <label for="fname" class="labelBox">City: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="City" name="City" style="height: 30px;">
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="fax" class="labelBox">Fax:</label><br>
+                <input class="form-input" type="text" id="fax" name="fax" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="email" class="labelBox">Email:<span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="email" name="email" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="suburb" class="labelBox">Suburb: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="suburb" name="suburb" style="height: 30px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Company Addresses-->
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="address-header">Company Postal Address <span style="color:red">*</span></div>
+              <div class="inputLabel">
+                <textarea id="postalAddress" name="postalAddress" rows="4" cols="50">
+                </textarea>
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="address-header">Company Physical Address <span style="color:red">*</span></div>
+              <div class="inputLabel">
+                <textarea id="physicalAddress" name="physicalAddress" rows="4" cols="50">
+                </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Vat & Industry-->
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="address-header">Vat Number</div>
+              <div class="inputLabel">
+                <input class="form-input" type="text" id="vatno" name="vatno" style="height: 30px;">
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="address-header">Industry <span style="color:red">*</span></div>
+              <div class="inputLabel">
+                <input class="form-input" type="text" id="industry" name="industry" style="height: 30px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Company Addresses-->
+        <div class="grid-item form-headers">Description Of Company: <span style="color:red">*</span></div>
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1" style="width: 80%;">
+              <div class="inputLabel">
+                <textarea id="descriptionCompany" name="descriptionCompany" rows="4" cols="50">
+                        </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Contact Person Details-->
+        <div class="grid-item form-headers">Contact Person Details:</div>
+        <div class="grid-item">
+
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="contact-name" class="labelBox">Full Name: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="contact-name" name="contact-name" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="contact-department" class="labelBox">Department: <span
+                    style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="contact-department" name="contact-department"
+                  style="height: 30px;">
+              </div>
+
+              <div class="inputLabel">
+                <label for="contact-workno" class="labelBox">Work No: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="contact-workno" name="contact-workno" style="height: 30px;">
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="contact-position" class="labelBox">Position: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="contact-position" name="contact-position"
+                  style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="contact-email" class="labelBox">Email: <span style="color:red">*</span></label><br>
+                <input class="form-input" type="text" id="contact-email" name="contact-email" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="jobTitle" class="labelBox">Cell: </label><br>
+                <input class="form-input" type="text" id="contact-email" name="contact-email" style="height: 30px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Company Benefits-->
+        <div class="grid-item form-headers">Company Benefits:</div>
+        <div class="grid-item">
+
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="Medical" class="labelBox">Medical:</label><br>
+                <input class="form-input" type="text" id="medical" name="medical" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="hours" class="labelBox">Hours:</label><br>
+                <input class="form-input" type="text" id="hours" name="hours" style="height: 30px;">
+              </div>
+
+              <div class="inputLabel">
+                <label for="leave" class="labelBox">Leave:</label><br>
+                <input class="form-input" type="text" id="leave" name="leave" style="height: 30px;">
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="jobTitle" class="labelBox">13th Cheque:</label><br>
+                <input class="form-input" type="text" id="13cheque" name="13cheque" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="jobTitle" class="labelBox">Pension:</label><br>
+                <input class="form-input" type="text" id="pention" name="pention" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label for="jobTitle" class="labelBox">Other:</label><br>
+                <input class="form-input" type="text" id="other" name="other" style="height: 30px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Terms And Conditions-->
+        <div class="grid-item form-headers">Terms & Conditions:</div>
+        <div class="grid-item">
+
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel" style="display: flex;">
+                <input class=" custom-checkbox" type="checkbox" id="terms" name="terms" value="terms">
+                <label for="terms"> Accept our <a href="#">terms and conditions</a> of use <span
+                    style="color:red">*</span></label> <br>
+              </div>
+            </div>
+
+            <div class="form-col-1 ">
+              <div class="inputLabel" style="display: flex;">
+                <input class=" custom-checkbox" type="checkbox" id="terms" name="terms" value="terms">
+                <label for="terms">Opt in to receive Candidates/specials emails</label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width:80%; margin: 0 auto 0 auto;">
+          <div style="margin-right: 100%;">
+            <button class="submit-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h6 class="modalHeader">Candidate/Employer Login</h6>
+      <div class="modalInputContainer">
+        <input class="modalInput" placeholder="User Name">
+        <input class="modalInput" input type="password" placeholder="Password">
+        <button class="goBtn" href="#">GO</button>
+        <div style="display: flex; flex-direction: row;justify-content: space-between; margin-top: 10px;">
+          <button class="modalBtns" style="background-color: #150E56;">Register</button>
+          <button class="modalBtns" style="background-color:#7B113A">Forgot Password?</button>
+        </div>
+        <div style="text-align: left; margin-top: 10px; font-size: 12px; font-weight: bold;">
+          <p>By signing in, you agree to the T's & C's. </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="footer-col-container">
+      <div class="footer-col">
+        <h6>Remote Personnel</h6>
+        <div class="icons-container">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="footer-icon"
+              height="30px"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+            </svg>
+          </a>
+
+
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+          </a>
+
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+              viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+            </svg>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="footer-col footer-col2">
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="pdf/Amended_Basic_Conditions_of_Employment_Act.pdf">Basic Conditions Of Employment</a>
+        <a href="pdf/PAIA_POPIA_manual_Total_Recruitment_Solutions.pdf">Popi</a>
+        <a href="userTerms.html">User Terms</a>
+      </div>
+
+      <div class="footer-col footer-col2">
+        <h6>Contact Us</h6>
+        <p>Email: <a href="#">info@remotepersonnel.net</a></p>
+        <p>Office: <a href="#">+27 11 970 3166</a></p>
+        <a href="#" style="font-weight: bold;">Powered By TRS</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <hr size="1">
+      <p style="margin-top: 10px;">&#169; 2024 All rights reserved</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>

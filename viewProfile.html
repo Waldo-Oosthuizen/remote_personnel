@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Remote Personnel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav id="navbar">
+    <!--Logo-->
+    <div class="logo">
+      <a href="index.html"><img src="Images/Remote Personnel -- Logo.svg" /></a>
+    </div>
+    <!--Hamburger menu-->
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <!--nav links-->
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">CV Search</a>
+      </li>
+      <li>
+        <a href="jobs.html">Jobs</a>
+      </li>
+      <li>
+        <a href="jobseekers.html">Job Seekers</a>
+      </li>
+      <li>
+        <a href="Employers.html">Employers</a>
+      </li>
+      <li>
+        <a href="personnel-search.html">Personnel Search</a>
+      </li>
+      <li>
+        <a href="enquiries.html">Enquiries</a>
+      </li>
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="#contact"><button class="nav-btn" style="background-color: #7B113A">Sign In</button></a>
+      </li>
+    </ul>
+  </nav>
+  <!--End of Navbar-->
+
+  <style>
+    .content-table {
+      border-collapse: collapse;
+      font-size: 20px;
+      min-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+    }
+
+    .content-table td {
+      vertical-align: top;
+    }
+
+    .content-table thead tr {
+      background-color: #150E56;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .content-table th,
+    td {
+      padding: 20px 50px;
+      border-bottom: 1px solid lightgrey;
+      border-right: 2px solid #ffff;
+
+    }
+
+
+    .content-table tbody tr:nth-of-type(even) {
+      background-color: #e5edf3;
+    }
+
+    .nested-ul {
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+
+    .UL-space {
+      margin-top: 20px;
+    }
+
+    .table-container {
+      width: 80vw;
+      margin: 0 auto 30px auto;
+      border-radius: 10px;
+    }
+
+    .book-btn {
+      padding: 10px;
+      background-color: #a2c579;
+      color: #e5edf3;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .book-btn:nth-child(even) {
+      background-color: #495935;
+    }
+
+    .book-btn:hover {
+      scale: 1.1;
+      transition: 0.3s ease-in-out;
+    }
+
+    .buttons-td {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-td {
+      margin-right: auto;
+    }
+
+    .img-td-info-container {
+      margin-left: 20px;
+      display: flex;
+      width: 100%;
+    }
+
+    .inner-wrapper {
+      display: flex;
+      flex-direction: column;
+      line-height: 35px;
+    }
+
+    .img-td-info-divs {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .img-td-info-divs p b {
+      margin-right: 10px;
+    }
+
+    .change-flex-direction {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* The Modal (background) */
+    .makeContactModal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .makeContactModal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      /* 15% from the top and centered */
+      padding: 30px;
+      border: 1px solid #888;
+      width: 30%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .makeContactModalClose {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: -20px;
+    }
+
+    .makeContactModalClose:hover,
+    .makeContactModalClose:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .contactModal-div {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
+
+
+
+    @media screen and (max-width: 700px) {
+      .table-container {
+        width: 90vw;
+      }
+
+      .change-flex-direction {
+        flex-direction: column;
+      }
+
+      .candidate-img {
+        margin-left: 0px;
+        margin-bottom: 15px;
+      }
+
+      .img-td-info-container {
+        margin-left: 0px;
+        display: flex;
+        width: 100%;
+      }
+
+      td {
+        display: block;
+      }
+
+      .tr-display-none {
+        display: none;
+      }
+
+      .content-table tbody tr:nth-of-type(odd) {
+        background-color: #ffffff;
+      }
+
+      .content-table tbody tr:nth-of-type(even) {
+        background-color: #ffffff;
+      }
+
+      /* Modal Content/Box */
+      .makeContactModal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+      }
+
+    }
+
+    .makeContact-modal-header {
+      width: 85%;
+      background-color: #7B113A;
+      border-radius: 5px;
+      text-align: center;
+      margin: 20px auto 20px auto;
+      padding: 10px;
+
+    }
+
+    .makeContact-modal-header h3 {
+      color: #fefefe;
+    }
+
+    .modal-submit-btn {
+      background-color: #a2c579;
+      color: white;
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .input-style {
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+    }
+  </style>
+
+  <!-- Make Contact Modal-->
+  <div id="makeContactModal" class="makeContactModal">
+
+    <!-- Modal content -->
+    <div class="makeContactModal-content">
+      <span class="makeContactModalClose">&times;</span>
+      <div class="makeContact-modal-header">
+        <h3>Purchase Contact</h3>
+      </div>
+
+      <div class="contactModal-div">
+        <label for="fname">Company Name:</label>
+        <input class="input-style" type="text" name="fname"><br><br>
+      </div>
+      <div class="contactModal-div">
+        <label for="fname">Name:</label>
+        <input class="input-style" type="text" name="fname"><br><br>
+      </div>
+      <div class="contactModal-div">
+        <label for="fname">Email:</label>
+        <input class="input-style" type="text" name="fname"><br><br>
+      </div>
+      <div class="contactModal-div">
+        <label for="fname">Contact No:</label>
+        <input class="input-style" type="text" name="fname"><br><br>
+      </div>
+      <div class="contactModal-div">
+        <label for="message">Message:</label>
+        <textarea class="input-style" name="messsage" rows="6" cols="60">
+        </textarea>
+      </div>
+      <div class="contactModal-div">
+        <button class="modal-submit-btn">
+          Submit
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="table-container">
+    <h1></h1>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th class="tr-display-none">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="buttons-td">
+            <button id="makeContactBtn" class="book-btn">Contact</button>
+            <button class="book-btn">Add To talent pool</button>
+            <button class="book-btn">Enquire</button>
+            <button class="book-btn">Book Interview</button>
+          </td>
+          <td class="img-td">
+
+            <div class="change-flex-direction">
+              <img src="Candidates/pexels-pixabay-415829.jpg" class="candidate-img">
+              <div class="img-td-info-container">
+                <div class="inner-wrapper">
+                  <div class="img-td-info-divs">
+                    <p><b>Ideal job:</b></p>
+                    <p>Web Developer</p>
+                  </div>
+                  <div class="img-td-info-divs">
+                    <p><b>Salary:</b></p>
+                    <p>R30 000 neg</p>
+                  </div>
+                  <div class="img-td-info-divs">
+                    <p><b>Notice Period:</b></p>
+                    <p>1 Month</p>
+                  </div>
+                  <div class="img-td-info-divs">
+                    <p><b>Race:</b></p>
+                    <p>White</p>
+                  </div>
+                  <div class="img-td-info-divs">
+                    <p><b>Age:</b></p>
+                    <p>32</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td><b>Rating:</b></td>
+          <td> <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Highest Qualification:</b></td>
+          <td>Bachelor Of Information Technology</td>
+        </tr>
+        <tr>
+          <td><b>All Qualifications:</b></td>
+          <td>Bachelor Of Information Technology, Diploma in interaction Design, JSE, JSA Certficate, Martic Certificate
+          </td>
+        </tr>
+        <tr>
+          <td><b>Computer Skills:</b></td>
+          <td>Javascript, CSS, HTML, ReactJS, Node.js, ExpressJS, Adobe Photoshop, Figma</td>
+        </tr>
+        <tr>
+          <td><b>Industry Experience</b></td>
+          <td>
+            <ul>
+              <li>Senior Web Developer at TechSavvy Solutions (2018-Present):</li>
+              <ul class="nested-ul">
+                <li>Spearheaded the development of several high-profile web applications for clients in diverse
+                  industries, including e-commerce, healthcare, and finance.</li>
+                <li>Led a team of developers in implementing responsive and user-friendly designs, resulting in a 30%
+                  increase in user engagement.</li>
+                <li>Utilized cutting-edge technologies such as React.js and Node.js to create dynamic and interactive
+                  web experiences.</li>
+                <li>Collaborated with cross-functional teams including UI/UX designers, project managers, and quality
+                  assurance engineers to ensure project milestones were met on time and within budget.</li>
+                <li>Conducted code reviews and provided mentorship to junior developers, fostering a culture of
+                  continuous learning and growth within the team.</li>
+              </ul>
+            </ul>
+            <ul class="UL-space">
+              <li>Freelance Web Developer (2016-2018):</li>
+              <ul class="nested-ul">
+                <li>Successfully managed a portfolio of clients, delivering custom web solutions tailored to their
+                  specific needs and requirements.</li>
+                <li>Developed responsive websites optimized for performance and search engine visibility, resulting in
+                  increased traffic and conversions for clients' businesses.</li>
+                <li>Actively engaged with clients throughout the development process, from initial consultation and
+                  planning to deployment and post-launch support.</li>
+                <li>Demonstrated strong project management skills, effectively prioritizing tasks and meeting project
+                  deadlines to ensure client satisfaction.</li>
+                <li>Implemented best practices in web development, including semantic HTML, CSS preprocessing with SASS,
+                  and JavaScript frameworks like AngularJS.</li>
+              </ul>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Nearest City:</b></td>
+          <td>Johannesburg</td>
+        </tr>
+        <tr>
+          <td><b>Home Town:</b></td>
+          <td>Alberton</td>
+        </tr>
+        <tr>
+          <td><b>Languages:</b></td>
+          <td>English, Afrikaans</td>
+        </tr>
+        <tr>
+          <td><b>Drivers License:</b></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><b>Preferred Areas Of Work:</b></td>
+          <td>Johannesburg and Surrounding areas</td>
+        </tr>
+        <tr>
+          <td><b>Willing to Relocate:</b></td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td><b>Marital Status:</b></td>
+          <td>Married</td>
+        </tr>
+        <tr>
+          <td><b>Available For Employment:</b></td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td><b>Remote Or Contact:</b></td>
+          <td>Both</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h6 class="modalHeader">Candidate/Employer Login</h6>
+      <div class="modalInputContainer">
+        <input class="modalInput" placeholder="User Name">
+        <input class="modalInput" input type="password" placeholder="Password">
+        <button class="goBtn" href="#">GO</button>
+        <div style="display: flex; flex-direction: row;justify-content: space-between; margin-top: 10px;">
+          <button class="modalBtns" style="background-color: #150E56;">Register</button>
+          <button class="modalBtns" style="background-color:#7B113A">Forgot Password?</button>
+        </div>
+        <div style="text-align: left; margin-top: 10px; font-size: 12px; font-weight: bold;">
+          <p>By signing in, you agree to the T's & C's. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    <div class="footer-col-container">
+      <div class="footer-col">
+        <h6>Remote Personnel</h6>
+        <div class="icons-container">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="footer-icon"
+              height="30px"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+              viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col footer-col2">
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="pdf/Amended_Basic_Conditions_of_Employment_Act.pdf">Basic Conditions Of Employment</a>
+        <a href="pdf/PAIA_POPIA_manual_Total_Recruitment_Solutions.pdf">Popi</a>
+        <a href="userTerms.html">User Terms</a>
+      </div>
+      <div class="footer-col footer-col2">
+        <h6>Contact Us</h6>
+        <p>Email: <a href="#">info@remotepersonnel.net</a></p>
+        <p>Office: <a href="#">+27 11 970 3166</a></p>
+        <a href="#" style="font-weight: bold;">Powered By TRS</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <hr size="1">
+      <p style="margin-top: 10px;">&#169; 2024 All rights reserved</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("makeContactModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("makeContactBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("makeContactModalClose")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

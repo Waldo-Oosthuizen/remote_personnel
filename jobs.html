@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Remote Personnel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav id="navbar">
+    <!--Logo-->
+    <div class="logo">
+      <a href="index.html"><img src="Images/Remote Personnel -- Logo.svg" /></a>
+    </div>
+    <!--Hamburger menu-->
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <!--nav links-->
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">CV Search</a>
+      </li>
+      <li>
+        <a href="jobs.html">Jobs</a>
+      </li>
+      <li>
+        <a href="jobseekers.html">Job Seekers</a>
+      </li>
+      <li>
+        <a href="Employers.html">Employers</a>
+      </li>
+      <li>
+        <a href="personnel-search.html">Personnel Search</a>
+      </li>
+      <li>
+        <a href="enquiries.html">Enquiries</a>
+      </li>
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="#contact"><button class="nav-btn" style="background-color: #7B113A">Sign In</button></a>
+      </li>
+    </ul>
+  </nav>
+  <!--End of Navbar-->
+  <div class="header">
+    <div class="jobs-header-text" style="text-align: center; width: 100%;">
+      <h1 style="color: #150E56; margin-bottom: 20px;">Search for Available Jobs Accross South
+        Africa
+        and Africa</span>
+      </h1>
+      <p style="font-weight: bold;">Our Recruiting Clients are looking for the highest calibre employees to fill
+        <strong>Available Job
+          openings</strong> in their
+        companies. Browse from <strong>Available Jobs across South Africa</strong> to find the right employment
+        opportunities for your
+        skills.
+        Spotted your next big career step? View the Job Details to get the Application Process started.
+      </p>
+
+
+    </div>
+  </div>
+  <!--Search Top Canidates form-->
+  <div class="search-container">
+    <div class="form">
+      <h2 class="SearchForm-header">Quick Job Search</h2>
+      <div class="columnsContainer">
+        <!--COLUMN 1-->
+        <div class="form-col-1">
+          <div class="inputLabel">
+            <label for="jobTitle" class="labelBox">Keyword or Job Title:</label><br>
+            <input class="form-input" type="text" id="jobTitle" name="jobTitle" style="height: 30px;"><br>
+          </div>
+        </div>
+
+        <!--COLUMN 2-->
+        <div class="form-col-1">
+          <div class="inputLabel">
+            <label for="fname" class="labelBox">Location:</label><br>
+            <input class="form-input" type="text" id="location" name="location" style="height: 30px;"><br>
+          </div>
+        </div>
+
+      </div>
+      <div style="width:85%; margin: 0 auto 0 auto;">
+        <div style="display: flex;">
+          <button class="form-btns">Search</button>
+          <button class="form-btns red-btn">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h6 class="modalHeader">Candidate/Employer Login</h6>
+      <div class="modalInputContainer">
+        <input class="modalInput" placeholder="User Name">
+        <input class="modalInput" input type="password" placeholder="Password">
+        <button class="goBtn" href="#">GO</button>
+        <div style="display: flex; flex-direction: row;justify-content: space-between; margin-top: 10px;">
+          <button class="modalBtns" style="background-color: #150E56;">Register</button>
+          <button class="modalBtns" style="background-color:#7B113A">Forgot Password?</button>
+        </div>
+        <div style="text-align: left; margin-top: 10px; font-size: 12px; font-weight: bold;">
+          <p>By signing in, you agree to the T's & C's. </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--Search Top Candidates slide-->
+
+  <div class="job-container">
+    <h2>Recent Available Jobs:</h2>
+
+    <!-- Slider container -->
+    <div class="grid-container">
+
+      <div class="jobs-card">
+        <h6>Production Manager</h6>
+        <ul class="jobUl">
+          <li>Liaise with Operations Manager re current projections vs. actual sales</li>
+          <li>Review/ adjust monthly Planning Schedule & Weekly Plans</li>
+          <li>Conduct weekly Production Meeting at Conversion &a</li>
+        </ul>
+        <div style=" justify-content: space-between; margin-top: 20px;">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex;">
+              <p>Industry:</p>
+              <p style="margin-left: 10px;">Manufacturing</p>
+            </div>
+            <div style="display: flex;">
+              <p>Location:</p>
+              <p style="margin-left: 10px;">Pinetown</p>
+            </div>
+            <div style="display: flex;">
+              <p>Ref#:</p>
+              <p style="margin-left: 10px;">73005</p>
+            </div>
+          </div>
+          <button class="viewProfileBtn" href="#">View Details</button>
+
+        </div>
+      </div>
+
+      <div class="jobs-card">
+        <h6>Quality Assurance Specialist</h6>
+        <ul class="jobUl">
+          <li>Implement and maintain quality control procedures for all production processes</li>
+          <li>Conduct regular inspections to ensure compliance with industry standards and regulations</li>
+          <li>Investigate and resolve any quality issues or deviations from specifications</li>
+        </ul>
+        <div style=" justify-content: space-between; margin-top: 20px;">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex;">
+              <p>Industry:</p>
+              <p style="margin-left: 10px;">Food Processing</p>
+            </div>
+            <div style="display: flex;">
+              <p>Location:</p>
+              <p style="margin-left: 10px;">Johannessburg</p>
+            </div>
+            <div style="display: flex;">
+              <p>Ref#:</p>
+              <p style="margin-left: 10px;">84592</p>
+            </div>
+          </div>
+          <button class="viewProfileBtn" href="#">View Details</button>
+
+        </div>
+      </div>
+
+      <div class="jobs-card">
+        <h6>Research and Development Engineer</h6>
+        <ul class="jobUl">
+          <li>Design and develop new products or improve existing ones through experimentation and testing</li>
+          <li>Collaborate with cross-functional teams to translate customer needs into technical requirements</li>
+          <li>Stay updated on emerging technologies and industry trends to drive innovation</li>
+        </ul>
+        <div style=" justify-content: space-between; margin-top: 20px;">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex;">
+              <p>Industry:</p>
+              <p style="margin-left: 10px;">Electronics</p>
+            </div>
+            <div style="display: flex;">
+              <p>Location:</p>
+              <p style="margin-left: 10px;">San Jose</p>
+            </div>
+            <div style="display: flex;">
+              <p>Ref#:</p>
+              <p style="margin-left: 10px;">51234</p>
+            </div>
+          </div>
+          <button class="viewProfileBtn" href="#">View Details</button>
+
+        </div>
+      </div>
+
+      <div class="jobs-card">
+        <h6>Customer Experience Manager</h6>
+        <ul class="jobUl">
+          <li>Develop and implement strategies to enhance the overall customer experience</li>
+          <li>Analyze customer feedback and data to identify areas for improvement</li>
+          <li>Train and mentor customer service representatives to ensure exceptional service delivery</li>
+        </ul>
+        <div style=" justify-content: space-between; margin-top: 20px;">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex;">
+              <p>Industry:</p>
+              <p style="margin-left: 10px;">Retail</p>
+            </div>
+            <div style="display: flex;">
+              <p>Location:</p>
+              <p style="margin-left: 10px;">New York City</p>
+            </div>
+            <div style="display: flex;">
+              <p>Ref#:</p>
+              <p style="margin-left: 10px;">33678</p>
+            </div>
+          </div>
+          <button class="viewProfileBtn" href="#">View Details</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- Control buttons -->
+    <div></div>
+    <button class="btn btn-next"> &#8594; </button>
+    <button class="btn btn-prev"> &#8592; </button>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="footer-col-container">
+      <div class="footer-col">
+        <h6>Remote Personnel</h6>
+        <div class="icons-container">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="footer-icon"
+              height="30px"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+              viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#f6f4eb"
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col footer-col2">
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="pdf/Amended_Basic_Conditions_of_Employment_Act.pdf">Basic Conditions Of Employment</a>
+        <a href="pdf/PAIA_POPIA_manual_Total_Recruitment_Solutions.pdf">Popi</a>
+        <a href="userTerms.html">User Terms</a>
+      </div>
+      <div class="footer-col footer-col2">
+        <h6>Contact Us</h6>
+        <p>Email: <a href="#">info@remotepersonnel.net</a></p>
+        <p>Office: <a href="#">+27 11 970 3166</a></p>
+        <a href="#" style="font-weight: bold;">Powered By TRS</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <hr size="1">
+      <p style="margin-top: 10px;">&#169; 2024 All rights reserved</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

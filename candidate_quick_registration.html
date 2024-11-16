@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Remote Personnel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<style>
+  .star-span {
+    color: rgb(152, 2, 2);
+  }
+
+  .redColor {
+    color: rgb(215, 133, 133);
+  }
+
+  .select-style {
+    width: 40%;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .selectContainer {
+    display: flex;
+  }
+
+  .form-input {
+    height: 30px;
+    text-align: center;
+  }
+
+  .dropdowns {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .dob {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .dropdowns-small {
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .text-resize {
+    font-size: 14px;
+  }
+
+  .fileInput {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .informationUL-container {
+    width: 40vw;
+    color: white;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<body>
+  <!--Navbar-->
+  <nav id="navbar">
+    <!--Logo-->
+    <div class="logo">
+      <a href="index.html"><img src="Images/Remote Personnel -- Logo.svg" /></a>
+    </div>
+    <!--Hamburger menu-->
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <!--nav links-->
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">CV Search</a>
+      </li>
+      <li>
+        <a href="jobsindex.html">Jobs</a>
+      </li>
+      <li>
+        <a href="jobseekers.html">Job Seekers</a>
+      </li>
+      <li>
+        <a href="Employers.html">Employers</a>
+      </li>
+      <li>
+        <a href="personnel-search.html">Personnel Search</a>
+      </li>
+      <li>
+        <a href="enquiries.html">Enquiries</a>
+      </li>
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="#contact"><button class="nav-btn" style="background-color: #7B113A">Sign In</button></a>
+      </li>
+    </ul>
+  </nav>
+  <!--End of Navbar-->
+
+  <div class="header">
+    <div class="jobs-header-text" style="text-align: center; width: 100%;">
+      <h1 style="color: #150E56; margin-bottom: 20px;">Candidate Quick Registration
+      </h1>
+      <p style="font-weight: bold;">
+        After completing the registration, please take your time to add as much detail as possible to your profile since
+        this online CV that you are creating is what the client will be receiving.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="employers-container" style="margin-top: 30px;">
+    <div class="form">
+      <div class="grid-container">
+        <!--Company Details-->
+        <div class="grid-item form-headers">Candidate Details</div>
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="username" class="labelBox">ID/Passort/Work Permit:
+                  <span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="ID" placeholder="no spaces">
+              </div>
+              <div class="inputLabel">
+                <label for="password" class="labelBox">Citizenship:<span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option value="0">Select Citizenship</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Anguilla">Anguilla</option>
+                  <option value="Antarctica">Antarctica</option>
+                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Aruba">Aruba</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaidjan">Azerbaidjan</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Bouvet Island">Bouvet Island</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                  <option value="Brunei Darussalam">Brunei Darussalam</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Cayman Islands">Cayman Islands</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Christmas Island">Christmas Island</option>
+                  <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo">Congo</option>
+                  <option value="Cook Islands">Cook Islands</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Djibouti">Djibouti</option>
+                  <option value="Dominica">Dominica</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="East Timor">East Timor</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Eritrea">Eritrea</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Falkland Islands">Falkland Islands</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="Fiji">Fiji</option>
+                  <option value="Finland">Finland</option>
+                  <option value="Former USSR">Former USSR</option>
+                  <option value="France">France</option>
+                  <option value="France (European Territory)">France (European Territory)</option>
+                  <option value="French Guyana">French Guyana</option>
+                  <option value="French Southern Territories">French Southern Territories</option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Gambia">Gambia</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Grenada">Grenada</option>
+                  <option value="Guadeloupe (French)">Guadeloupe (French)</option>
+                  <option value="Guam">Guam</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guinea Bissau">Guinea Bissau</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="India">India</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Ivory Coast">Ivory Coast</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jordan">Jordan</option>
+                  <option value="Kazakhstan">Kazakhstan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Kiribati">Kiribati</option>
+                  <option value="Kuwait">Kuwait</option>
+                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Lesotho">Lesotho</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Macau">Macau</option>
+                  <option value="Macedonia">Macedonia</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Malawi">Malawi</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Marshall Islands">Marshall Islands</option>
+                  <option value="Martinique (French)">Martinique (French)</option>
+                  <option value="Mauritania">Mauritania</option>
+                  <option value="Mauritius">Mauritius</option>
+                  <option value="Mayotte">Mayotte</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Micronesia">Micronesia</option>
+                  <option value="Moldavia">Moldavia</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montserrat">Montserrat</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Nauru">Nauru</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Netherlands Antilles">Netherlands Antilles</option>
+                  <option value="Neutral Zone">Neutral Zone</option>
+                  <option value="New Caledonia (French)">New Caledonia (French)</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Niue">Niue</option>
+                  <option value="Norfolk Island">Norfolk Island</option>
+                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Palau">Palau</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Papua New Guinea">Papua New Guinea</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Pitcairn Island">Pitcairn Island</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Polynesia (French)">Polynesia (French)</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Reunion (French)">Reunion (French)</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russian Federation">Russian Federation</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="S. Georgia &amp;amp; S. Sandwich Islands">S. Georgia &amp;amp; S. Sandwich Islands
+                  </option>
+                  <option value="Saint Helena">Saint Helena</option>
+                  <option value="Saint Kitts &amp; Nevis Anguilla">Saint Kitts &amp; Nevis Anguilla</option>
+                  <option value="Saint Lucia">Saint Lucia</option>
+                  <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                  <option value="Saint Tome and Principe">Saint Tome and Principe</option>
+                  <option value="Saint Vincent &amp;amp; Grenadines">Saint Vincent &amp;amp; Grenadines</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Serbia-Montenegro">Serbia-Montenegro</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option selected="selected" value="South Africa">South Africa</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+                  <option value="Swaziland">Swaziland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Tadjikistan">Tadjikistan</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tokelau">Tokelau</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                  <option value="Tuvalu">Tuvalu</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="UK">UK</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="United Sates">United Sates</option>
+                  <option value="USA Minor Outlying Islands">USA Minor Outlying Islands</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Vatican City">Vatican City</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                  <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                  <option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+                  <option value="Western Sahara">Western Sahara</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Democratic Republic of Congo">Democratic Republic of Congo</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+
+
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="password" class="labelBox">Username:<span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="username" placeholder="Email Address">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Confirm Email:<span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="username">
+              </div>
+              <div class="inputLabel">
+                <label for="company" class="labelBox">First Name: <span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="companyName">
+              </div>
+              <div class="inputLabel">
+                <label class="labelBox">Surname:<span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="Surname">
+              </div>
+              <div class="inputLabel">
+                <label class="labelBox">Cell Number:<span class="star-span">*</span></label><br>
+                <div class="selectContainer">
+                  <select class="select-style">
+                    <option value="0">Select Cell Code</option>
+                    <option value="Afghanistan">(+93) Afghanistan</option>
+                    <option value="Albania">(+355) Albania</option>
+                    <option value="Algeria">(+213) Algeria</option>
+                    <option value="American Samoa">(+1-684) American Samoa</option>
+                    <option value="Andorra">(+376) Andorra</option>
+                    <option value="Angola">(+244) Angola</option>
+                    <option value="Anguilla">(+1-264) Anguilla</option>
+                    <option value="Antarctica">(+672) Antarctica</option>
+                    <option value="Antigua and Barbuda">(+1-268) Antigua and Barbuda</option>
+                    <option value="Argentina">(+54) Argentina</option>
+                    <option value="Armenia">(+374) Armenia</option>
+                    <option value="Aruba">(+297) Aruba</option>
+                    <option value="Australia">(+61) Australia</option>
+                    <option value="Austria">(+43) Austria</option>
+                    <option value="Azerbaidjan">(+994) Azerbaidjan</option>
+                    <option value="Bahamas">(+1-242) Bahamas</option>
+                    <option value="Bahrain">(+973) Bahrain</option>
+                    <option value="Bangladesh">(+880) Bangladesh</option>
+                    <option value="Barbados">(+1-246) Barbados</option>
+                    <option value="Belarus">(+375) Belarus</option>
+                    <option value="Belgium">(+32) Belgium</option>
+                    <option value="Belize">(+501) Belize</option>
+                    <option value="Benin">(+229) Benin</option>
+                    <option value="Bermuda">(+1-441) Bermuda</option>
+                    <option value="Bhutan">(+975) Bhutan</option>
+                    <option value="Bolivia">(+591) Bolivia</option>
+                    <option value="Bosnia-Herzegovina">(+387) Bosnia-Herzegovina</option>
+                    <option value="Botswana">(+267) Botswana</option>
+                    <option value="Bouvet Island">(+47) Bouvet Island</option>
+                    <option value="Brazil">(+55) Brazil</option>
+                    <option value="British Indian Ocean Territory">(+246) British Indian Ocean Territory</option>
+                    <option value="Brunei Darussalam">(+673) Brunei Darussalam</option>
+                    <option value="Bulgaria">(+359) Bulgaria</option>
+                    <option value="Burkina Faso">(+226) Burkina Faso</option>
+                    <option value="Burundi">(+257) Burundi</option>
+                    <option value="Cambodia">(+855) Cambodia</option>
+                    <option value="Cameroon">(+237) Cameroon</option>
+                    <option value="Canada">(+1) Canada</option>
+                    <option value="Cape Verde">(+238) Cape Verde</option>
+                    <option value="Cayman Islands">(+1-345) Cayman Islands</option>
+                    <option value="Central African Republic">(+236) Central African Republic</option>
+                    <option value="Chad">(+235) Chad</option>
+                    <option value="Chile">(+56) Chile</option>
+                    <option value="China">(+86) China</option>
+                    <option value="Christmas Island">(+61) Christmas Island</option>
+                    <option value="Cocos (Keeling) Islands">(+61) Cocos (Keeling) Islands</option>
+                    <option value="Colombia">(+57) Colombia</option>
+                    <option value="Comoros">(+269) Comoros</option>
+                    <option value="Congo">(+242) Congo</option>
+                    <option value="Cook Islands">(+682) Cook Islands</option>
+                    <option value="Costa Rica">(+506) Costa Rica</option>
+                    <option value="Croatia">(+385) Croatia</option>
+                    <option value="Cyprus">(+357) Cyprus</option>
+                    <option value="Czech Republic">(+420) Czech Republic</option>
+                    <option value="Denmark">(+45) Denmark</option>
+                    <option value="Djibouti">(+253) Djibouti</option>
+                    <option value="Dominica">(+1-767) Dominica</option>
+                    <option value="Dominican Republic">(+1-809, +1-829, +1-849) Dominican Republic</option>
+                    <option value="East Timor">(+670) East Timor</option>
+                    <option value="Ecuador">(+593) Ecuador</option>
+                    <option value="Egypt">(+20) Egypt</option>
+                    <option value="El Salvador">(+503) El Salvador</option>
+                    <option value="Equatorial Guinea">(+240) Equatorial Guinea</option>
+                    <option value="Eritrea">(+291) Eritrea</option>
+                    <option value="Estonia">(+372) Estonia</option>
+                    <option value="Ethiopia">(+251) Ethiopia</option>
+                    <option value="Falkland Islands">(+500) Falkland Islands</option>
+                    <option value="Faroe Islands">(+298) Faroe Islands</option>
+                    <option value="Fiji">(+679) Fiji</option>
+                    <option value="Finland">(+358) Finland</option>
+                    <option value="Former USSR">(+7) Former USSR</option>
+                    <option value="France">(+33) France</option>
+                    <option value="France (European Territory)">(+33) France (European Territory)</option>
+                    <option value="French Guyana">(+594) French Guyana</option>
+                    <option value="French Southern Territories">(+262) French Southern Territories</option>
+                    <option value="Gabon">(+241) Gabon</option>
+                    <option value="Gambia">(+220) Gambia</option>
+                    <option value="Georgia">(+995) Georgia</option>
+                    <option value="Germany">(+49) Germany</option>
+                    <option value="Ghana">(+233) Ghana</option>
+                    <option value="Gibraltar">(+350) Gibraltar</option>
+                    <option value="Greece">(+30) Greece</option>
+                    <option value="Greenland">(+299) Greenland</option>
+                    <option value="Grenada">(+1-473) Grenada</option>
+                    <option value="Guadeloupe (French)">(+590) Guadeloupe (French)</option>
+                    <option value="Guam">(+1-671) Guam</option>
+                    <option value="Guatemala">(+502) Guatemala</option>
+                    <option value="Guinea">(+224) Guinea</option>
+                    <option value="Guinea Bissau">(+245) Guinea Bissau</option>
+                    <option value="Guyana">(+592) Guyana</option>
+                    <option value="Haiti">(+509) Haiti</option>
+                    <option value="Heard and McDonald Islands">(+672) Heard and McDonald Islands</option>
+                    <option value="Honduras">(+504) Honduras</option>
+                    <option value="Hong Kong">(+852) Hong Kong</option>
+                    <option value="Hungary">(+36) Hungary</option>
+                    <option value="Iceland">(+354) Iceland</option>
+                    <option value="India">(+91) India</option>
+                    <option value="Indonesia">(+62) Indonesia</option>
+                    <option value="Iraq">(+964) Iraq</option>
+                    <option value="Ireland">(+353) Ireland</option>
+                    <option value="Israel">(+972) Israel</option>
+                    <option value="Italy">(+39) Italy</option>
+                    <option value="Ivory Coast">(+225) Ivory Coast</option>
+                    <option value="Jamaica">(+1-876) Jamaica</option>
+                    <option value="Japan">(+81) Japan</option>
+                    <option value="Jordan">(+962) Jordan</option>
+                    <option value="Kazakhstan">(+7) Kazakhstan</option>
+                    <option value="Kenya">(+254) Kenya</option>
+                    <option value="Kiribati">(+686) Kiribati</option>
+                    <option value="Kuwait">(+965) Kuwait</option>
+                    <option value="Kyrgyzstan">(+996) Kyrgyzstan</option>
+                    <option value="Laos">(+856) Laos</option>
+                    <option value="Latvia">(+371) Latvia</option>
+                    <option value="Lebanon">(+961) Lebanon</option>
+                    <option value="Lesotho">(+266) Lesotho</option>
+                    <option value="Liberia">(+231) Liberia</option>
+                    <option value="Liechtenstein">(+423) Liechtenstein</option>
+                    <option value="Lithuania">(+370) Lithuania</option>
+                    <option value="Luxembourg">(+352) Luxembourg</option>
+                    <option value="Macau">(+853) Macau</option>
+                    <option value="Macedonia">(+389) Macedonia</option>
+                    <option value="Madagascar">(+261) Madagascar</option>
+                    <option value="Malawi">(+265) Malawi</option>
+                    <option value="Malaysia">(+60) Malaysia</option>
+                    <option value="Maldives">(+960) Maldives</option>
+                    <option value="Mali">(+223) Mali</option>
+                    <option value="Malta">(+356) Malta</option>
+                    <option value="Marshall Islands">(+692) Marshall Islands</option>
+                    <option value="Martinique (French)">(+596) Martinique (French)</option>
+                    <option value="Mauritania">(+222) Mauritania</option>
+                    <option value="Mauritius">(+230) Mauritius</option>
+                    <option value="Mayotte">(+262) Mayotte</option>
+                    <option value="Mexico">(+52) Mexico</option>
+                    <option value="Micronesia">(+691) Micronesia</option>
+                    <option value="Moldavia">(+373) Moldavia</option>
+                    <option value="Monaco">(+377) Monaco</option>
+                    <option value="Mongolia">(+976) Mongolia</option>
+                    <option value="Montserrat">(+1-664) Montserrat</option>
+                    <option value="Morocco">(+212) Morocco</option>
+                    <option value="Mozambique">(+258) Mozambique</option>
+                    <option value="Namibia">(+264) Namibia</option>
+                    <option value="Nauru">(+674) Nauru</option>
+                    <option value="Nepal">(+977) Nepal</option>
+                    <option value="Netherlands">(+31) Netherlands</option>
+                    <option value="Netherlands Antilles">(+599) Netherlands Antilles</option>
+                    <option value="Neutral Zone">(+1) Neutral Zone</option>
+                    <option value="New Caledonia (French)">(+687) New Caledonia (French)</option>
+                    <option value="New Zealand">(+64) New Zealand</option>
+                    <option value="Nicaragua">(+505) Nicaragua</option>
+                    <option value="Niger">(+227) Niger</option>
+                    <option value="Nigeria">(+234) Nigeria</option>
+                    <option value="Niue">(+683) Niue</option>
+                    <option value="Norfolk Island">(+672) Norfolk Island</option>
+                    <option value="Northern Mariana Islands">(+1-670) Northern Mariana Islands</option>
+                    <option value="Norway">(+47) Norway</option>
+                    <option value="Oman">(+968) Oman</option>
+                    <option value="Pakistan">(+92) Pakistan</option>
+                    <option value="Palau">(+680) Palau</option>
+                    <option value="Panama">(+507) Panama</option>
+                    <option value="Papua New Guinea">(+675) Papua New Guinea</option>
+                    <option value="Paraguay">(+595) Paraguay</option>
+                    <option value="Peru">(+51) Peru</option>
+                    <option value="Philippines">(+63) Philippines</option>
+                    <option value="Pitcairn Island">(+64) Pitcairn Island</option>
+                    <option value="Poland">(+48) Poland</option>
+                    <option value="Polynesia (French)">(+689) Polynesia (French)</option>
+                    <option value="Portugal">(+351) Portugal</option>
+                    <option value="Qatar">(+974) Qatar</option>
+                    <option value="Reunion (French)">(+262) Reunion (French)</option>
+                    <option value="Romania">(+40) Romania</option>
+                    <option value="Russian Federation">(+7) Russian Federation</option>
+                    <option value="Rwanda">(+250) Rwanda</option>
+                    <option value="S. Georgia &amp;amp; S. Sandwich Islands">(+500) S. Georgia &amp;amp; S. Sandwich
+                      Islands</option>
+                    <option value="Saint Helena">(+290) Saint Helena</option>
+                    <option value="Saint Kitts &amp; Nevis Anguilla">(+1-869) Saint Kitts &amp; Nevis Anguilla</option>
+                    <option value="Saint Lucia">(+1-758) Saint Lucia</option>
+                    <option value="Saint Pierre and Miquelon">(+508) Saint Pierre and Miquelon</option>
+                    <option value="Saint Tome and Principe">(+239) Saint Tome and Principe</option>
+                    <option value="Saint Vincent &amp;amp; Grenadines">(+1-784) Saint Vincent &amp;amp; Grenadines
+                    </option>
+                    <option value="Samoa">(+685) Samoa</option>
+                    <option value="San Marino">(+378) San Marino</option>
+                    <option value="Saudi Arabia">(+966) Saudi Arabia</option>
+                    <option value="Senegal">(+221) Senegal</option>
+                    <option value="Serbia-Montenegro">(+381) Serbia-Montenegro</option>
+                    <option value="Seychelles">(+248) Seychelles</option>
+                    <option value="Sierra Leone">(+232) Sierra Leone</option>
+                    <option value="Singapore">(+65) Singapore</option>
+                    <option value="Slovenia">(+386) Slovenia</option>
+                    <option value="Solomon Islands">(+677) Solomon Islands</option>
+                    <option value="Somalia">(+252) Somalia</option>
+                    <option value="South Africa">(+27) South Africa</option>
+                    <option value="South Korea">(+82) South Korea</option>
+                    <option value="Spain">(+34) Spain</option>
+                    <option value="Sri Lanka">(+94) Sri Lanka</option>
+                    <option value="Suriname">(+597) Suriname</option>
+                    <option value="Svalbard and Jan Mayen Islands">(+47) Svalbard and Jan Mayen Islands</option>
+                    <option value="Swaziland">(+268) Swaziland</option>
+                    <option value="Sweden">(+46) Sweden</option>
+                    <option value="Switzerland">(+41) Switzerland</option>
+                    <option value="Tadjikistan">(+992) Tadjikistan</option>
+                    <option value="Taiwan">(+886) Taiwan</option>
+                    <option value="Tanzania">(+255) Tanzania</option>
+                    <option value="Thailand">(+66) Thailand</option>
+                    <option value="Togo">(+228) Togo</option>
+                    <option value="Tokelau">(+690) Tokelau</option>
+                    <option value="Tonga">(+676) Tonga</option>
+                    <option value="Trinidad and Tobago">(+1-868) Trinidad and Tobago</option>
+                    <option value="Tunisia">(+216) Tunisia</option>
+                    <option value="Turkey">(+90) Turkey</option>
+                    <option value="Turkmenistan">(+993) Turkmenistan</option>
+                    <option value="Turks and Caicos Islands">(+1-649) Turks and Caicos Islands</option>
+                    <option value="Tuvalu">(+688) Tuvalu</option>
+                    <option value="Uganda">(+256) Uganda</option>
+                    <option value="UK">(+44) UK</option>
+                    <option value="Ukraine">(+380) Ukraine</option>
+                    <option value="United Arab Emirates">(+971) United Arab Emirates</option>
+                    <option value="Uruguay">(+598) Uruguay</option>
+                    <option value="United States">(+1) United States</option>
+                    <option value="USA Minor Outlying Islands">(+1) USA Minor Outlying Islands</option>
+                    <option value="Uzbekistan">(+998) Uzbekistan</option>
+                    <option value="Vanuatu">(+678) Vanuatu</option>
+                    <option value="Vatican City">(+39-06) Vatican City</option>
+                    <option value="Venezuela">(+58) Venezuela</option>
+                    <option value="Vietnam">(+84) Vietnam</option>
+                    <option value="Virgin Islands (British)">(+1-284) Virgin Islands (British)</option>
+                    <option value="Virgin Islands (USA)">(+1-340) Virgin Islands (USA)</option>
+                    <option value="Wallis and Futuna Islands">(+681) Wallis and Futuna Islands</option>
+                    <option value="Western Sahara">(+212) Western Sahara</option>
+                    <option value="Yemen">(+967) Yemen</option>
+                    <option value="Democratic Republic of Congo">(+243) Democratic Republic of Congo</option>
+                    <option value="Zambia">(+260) Zambia</option>
+                    <option value="Zimbabwe">(+263) Zimbabwe</option>
+                  </select>
+                  <input class="form-input2" type="text" style="height: 30px; width: 80%;">
+                </div>
+              </div>
+              <div class="inputLabel">
+                <label for="username" class="labelBox">password:
+                  <span class="star-span">*</span></label><br>
+                <input class="form-input" type="password" name="passsword">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Notice Period: <span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option>Immediate</option>
+                  <option>Neogotiable</option>
+                  <option>1 Week</option>
+                  <option>2 Weeks</option>
+                  <option>30 Days</option>
+                  <option>1 Calendar Month</option>
+                  <option>2 Calendar Months</option>
+                  <option>3 Calendar Months</option>
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="username" class="labelBox">Ideal Position:
+                  <span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="ID">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Ideal Industry: <span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option value="-1">Select an Option</option>
+                  <option value="other">other</option>
+                  <option value="1">Accounting</option>
+                  <option value="2">Advertising</option>
+                  <option value="3">Agriculture - Horticulture - Botanical</option>
+                  <option value="4">Airline - Aviation</option>
+                  <option value="5">Building - Construction</option>
+                  <option value="7">Automotive - Motor Vehicles</option>
+                  <option value="8">Banking</option>
+                  <option value="9">Biotechnology</option>
+                  <option value="10">Broadcasting - Radio - TV</option>
+                  <option value="12">Chemical</option>
+                  <option value="15">Computer - IT</option>
+                  <option value="16">Consulting</option>
+                  <option value="17">Consumer Products - FMCG</option>
+                  <option value="19">Defense - Aerospace</option>
+                  <option value="20">Education - Training</option>
+                  <option value="21">Electronics</option>
+                  <option value="22">Employment - HR</option>
+                  <option value="23">Energy - Gas</option>
+                  <option value="24">Entertainment - Leisure</option>
+                  <option value="25">Environmental - Nature Conservation</option>
+                  <option value="26">Exercise - Fitness</option>
+                  <option value="27">Textile - Fashion - Design</option>
+                  <option value="28">Food and Beverage</option>
+                  <option value="30">Government - Civil Service</option>
+                  <option value="31">Pharmaceutical - Healthcare</option>
+                  <option value="33">Hospitality - Resort</option>
+                  <option value="35">Heating Ventilation - Air-conditioning</option>
+                  <option value="36">Freight</option>
+                  <option value="38">Insurance - Brokering</option>
+                  <option value="39">Internet - E-Commerce</option>
+                  <option value="42">Legal</option>
+                  <option value="45">Manufacturing</option>
+                  <option value="46">Medical Equipment</option>
+                  <option value="48">Military</option>
+                  <option value="51">Not for Profit - Charitable</option>
+                  <option value="52">Office Supplies - Equipment</option>
+                  <option value="53">Oil Refining - Petroleum - Drilling</option>
+                  <option value="55">Packaging</option>
+                  <option value="57">Printing - Publishing</option>
+                  <option value="58">Public Relations</option>
+                  <option value="59">Real Estate - Property Mgt</option>
+                  <option value="61">Retail - Wholesale</option>
+                  <option value="63">Sales - Marketing</option>
+                  <option value="64">Security - Safety</option>
+                  <option value="65">Securities - Commodity Exchange</option>
+                  <option value="66">Service</option>
+                  <option value="68">Telecommunications</option>
+                  <option value="71">Travel</option>
+                  <option value="72">Wireless</option>
+                  <option value="73">Music</option>
+                  <option value="74">Sports</option>
+                  <option value="173">Engineering</option>
+                  <option value="175">Transportation - Logistics</option>
+                  <option value="177">Financial Services</option>
+                  <option value="178">Investment Banking</option>
+                  <option value="179">Call Centers</option>
+                  <option value="180">Cosmetics</option>
+                  <option value="181">Private Equity</option>
+                  <option value="182">Venture Capital</option>
+                  <option value="183">Mining</option>
+                  <option value="184">House Keeping - Childminder - AuPair</option>
+                  <option value="185">Driving - Forklift - Grader</option>
+                  <option value="186">Courier</option>
+                  <option value="187">Consumer Electronics</option>
+                  <option value="188">Aerospace</option>
+                  <option value="189">Alternative Dispute Resolution</option>
+                  <option value="190">Alternative Medicine</option>
+                  <option value="191">Animation</option>
+                  <option value="192">Architecture</option>
+                  <option value="193">Arts and Crafts</option>
+                  <option value="194">Auditing</option>
+                  <option value="195">AuPair - Childminder</option>
+                  <option value="196">Automotive</option>
+                  <option value="197">Brokering</option>
+                  <option value="198">Building - Construction</option>
+                  <option value="199">Building Materials</option>
+                  <option value="200">Business Supplies</option>
+                  <option value="201">Capital Markets</option>
+                  <option value="202">Cement</option>
+                  <option value="203">Ceramics</option>
+                  <option value="204">Charitable</option>
+                  <option value="205">Civil Engineering</option>
+                  <option value="206">Civil Services</option>
+                  <option value="207">Clothing</option>
+                  <option value="208">Commercial Real Estate</option>
+                  <option value="209">Commodity Exchange</option>
+                  <option value="210">Consumer Services</option>
+                  <option value="211">Dairy</option>
+                  <option value="212">Defence - Weapons</option>
+                  <option value="213">Design</option>
+                  <option value="214">Driving - Vehicle</option>
+                  <option value="215">E-Commerce</option>
+                  <option value="216">E-Learning</option>
+                  <option value="217">Electrical Manufacturing</option>
+                  <option value="218">Energy</option>
+                  <option value="219">Events Services</option>
+                  <option value="220">Executive Office</option>
+                  <option value="221">Export and Import</option>
+                  <option value="222">Facilities Services</option>
+                  <option value="223">Farming</option>
+                  <option value="224">Fashion</option>
+                  <option value="225">Fashion Design</option>
+                  <option value="226">Film - Motion Pictures</option>
+                  <option value="227">Forestry</option>
+                  <option value="228">Fund Raising</option>
+                  <option value="229">Furniture</option>
+                  <option value="230">Gambling and Casinos</option>
+                  <option value="231">Gas</option>
+                  <option value="232">Glass</option>
+                  <option value="233">Government Administration</option>
+                  <option value="234">Government Relations</option>
+                  <option value="235">Graphic Design</option>
+                  <option value="236">Healthcare</option>
+                  <option value="237">Higher Education</option>
+                  <option value="238">Human Resources</option>
+                  <option value="239">Individual &amp; Family Services</option>
+                  <option value="240">Industrial Automation</option>
+                  <option value="241">Industrial Engineering</option>
+                  <option value="242">Insurance</option>
+                  <option value="243">International Affairs</option>
+                  <option value="244">International Trade &amp; Development</option>
+                  <option value="245">Investigations</option>
+                  <option value="246">IT - Computer Games</option>
+                  <option value="247">IT - Hardware</option>
+                  <option value="248">IT - Internet</option>
+                  <option value="249">IT - Services</option>
+                  <option value="250">IT - Software</option>
+                  <option value="251">Judiciary</option>
+                  <option value="252">Landscape</option>
+                  <option value="253">Law Enforcement</option>
+                  <option value="254">Law Practice</option>
+                  <option value="255">Leisure</option>
+                  <option value="256">Libraries</option>
+                  <option value="257">Logistics and Supply Chain</option>
+                  <option value="258">Luxury Goods</option>
+                  <option value="259">Machinery</option>
+                  <option value="260">Management Consulting</option>
+                  <option value="261">Maritime</option>
+                  <option value="262">Market Research</option>
+                  <option value="263">Marketing</option>
+                  <option value="264">Mechanical Engineering</option>
+                  <option value="265">Media Production</option>
+                  <option value="266">Medical Practice</option>
+                  <option value="267">Mental Health Care</option>
+                  <option value="268">Metals</option>
+                  <option value="269">Modeling</option>
+                  <option value="270">Museums and Institutions</option>
+                  <option value="271">Nanotechnology</option>
+                  <option value="272">Nature Conservation</option>
+                  <option value="273">New Papers</option>
+                  <option value="274">Online Media</option>
+                  <option value="275">Outsourcing - Offshoring</option>
+                  <option value="276">Paper</option>
+                  <option value="277">Performing Arts</option>
+                  <option value="278">Philanthropy</option>
+                  <option value="279">Photography</option>
+                  <option value="280">Plastics</option>
+                  <option value="281">Professional Training &amp; Coaching</option>
+                  <option value="282">Program Development</option>
+                  <option value="283">Property Management</option>
+                  <option value="284">Public Policy</option>
+                  <option value="285">Public Safety</option>
+                  <option value="286">Publishing</option>
+                  <option value="287">Radio Broadcasting</option>
+                  <option value="288">Railway</option>
+                  <option value="289">Ranching</option>
+                  <option value="290">Recruitment - Staffing</option>
+                  <option value="291">Religious Institutions</option>
+                  <option value="292">Renewables</option>
+                  <option value="293">Research</option>
+                  <option value="294">Resort</option>
+                  <option value="295">Restaurants</option>
+                  <option value="296">Secondary Education</option>
+                  <option value="297">Semiconductors</option>
+                  <option value="298">Shipbuilding</option>
+                  <option value="299">Social and Community Services</option>
+                  <option value="300">Sporting Goods</option>
+                  <option value="301">Supermarkets</option>
+                  <option value="302">Think Tanks</option>
+                  <option value="303">Tobacco</option>
+                  <option value="304">Translation</option>
+                  <option value="305">Trucking</option>
+                  <option value="306">TV Broadcasting</option>
+                  <option value="307">Utilities</option>
+                  <option value="308">Veterinary</option>
+                  <option value="309">Warehousing</option>
+                  <option value="310">Water</option>
+                  <option value="311">Web &amp; Software Development</option>
+                  <option value="312">Wholesale</option>
+                  <option value="313">Wine and Spirits</option>
+                  <option value="314">Writing - Editing</option>
+                  <option value="315">Telematics</option>
+                  <option value="316">Agriculture </option>
+                  <option value="317">Air Transport</option>
+                  <option value="318">Air-conditioning</option>
+                  <option value="319">Airline</option>
+                  <option value="320">Alcohol </option>
+                  <option value="321">Artificial Intelligence - AI</option>
+                  <option value="322">Arts &amp; Crafts</option>
+                  <option value="323">Au Pair - Childminder</option>
+                  <option value="324">Auctions</option>
+                  <option value="325">AuPair</option>
+                  <option value="326">Auto Dealers</option>
+                  <option value="327">Aviation</option>
+                  <option value="328">Bakery</option>
+                  <option value="329">Beauty</option>
+                  <option value="330">Beverage</option>
+                  <option value="331">Big Data</option>
+                  <option value="332">Botanical</option>
+                  <option value="333">Boxing - Wrestling</option>
+                  <option value="334">Broadcasting </option>
+                  <option value="335">Business Services</option>
+                  <option value="336">Casinos</option>
+                  <option value="337">Caterer</option>
+                  <option value="338">Chiropractors</option>
+                  <option value="339">Cleaning Services</option>
+                  <option value="340">Cloud Computing</option>
+                  <option value="341">Coaching</option>
+                  <option value="342">Coal</option>
+                  <option value="343">Collection Agency</option>
+                  <option value="344">Community Services</option>
+                  <option value="345">Construction</option>
+                  <option value="346">Consumer Products</option>
+                  <option value="347">Cruise Lines</option>
+                  <option value="348">Cryptocurrency</option>
+                  <option value="349">Cybersecurity</option>
+                  <option value="350">Defense</option>
+                  <option value="351">Dentistry</option>
+                  <option value="352">Drilling</option>
+                  <option value="353">Driving</option>
+                  <option value="354">Education</option>
+                  <option value="355">Electrolysis</option>
+                  <option value="356">Employment</option>
+                  <option value="357">Entertainment</option>
+                  <option value="358">Environmental</option>
+                  <option value="359">ERP</option>
+                  <option value="360">Event Planning</option>
+                  <option value="361">Fishing</option>
+                  <option value="362">FMCG</option>
+                  <option value="363">Food</option>
+                  <option value="364">Food &amp; Beverage</option>
+                  <option value="365">Forklift - Grader</option>
+                  <option value="366">Fruit</option>
+                  <option value="367">Government</option>
+                  <option value="368">Health &amp; Safety</option>
+                  <option value="369">Health Professionals</option>
+                  <option value="370">Heating Ventilation - HVAC</option>
+                  <option value="371">Hedge Funds</option>
+                  <option value="372">Horticulture</option>
+                  <option value="373">Hospitality</option>
+                  <option value="374">Hotels</option>
+                  <option value="375">House Keeping</option>
+                  <option value="376">Human Rights</option>
+                  <option value="377">Import Export</option>
+                  <option value="378">Infrastructure</option>
+                  <option value="379">Institutions</option>
+                  <option value="380">Interior Design</option>
+                  <option value="381">International Trade</option>
+                  <option value="382">Internet</option>
+                  <option value="383">Land Surveying</option>
+                  <option value="384">Laundry</option>
+                  <option value="385">Livestock</option>
+                  <option value="386">Logistics</option>
+                  <option value="387">Massage Therapy</option>
+                  <option value="388">Microfinance</option>
+                  <option value="389">Mortgage</option>
+                  <option value="390">Motor Vehicles</option>
+                  <option value="391">Museums</option>
+                  <option value="392">News</option>
+                  <option value="393">Non-profit</option>
+                  <option value="394">Nursing</option>
+                  <option value="395">Nutrition </option>
+                  <option value="396">Oil Refining</option>
+                  <option value="397">Optometry</option>
+                  <option value="398">Pest Control</option>
+                  <option value="399">Petroleum</option>
+                  <option value="400">Pharmaceutical</option>
+                  <option value="401">Physical Therapy</option>
+                  <option value="402">Pipeline</option>
+                  <option value="403">Plumbing</option>
+                  <option value="404">Podiatry</option>
+                  <option value="405">Printing Publishing</option>
+                  <option value="406">Private Investigator</option>
+                  <option value="407">Professional Training </option>
+                  <option value="408">Racing</option>
+                  <option value="409">Radiology</option>
+                  <option value="410">Real Estate</option>
+                  <option value="411">Rental</option>
+                  <option value="412">Repair</option>
+                  <option value="413">Retail</option>
+                  <option value="414">Sales</option>
+                  <option value="415">Satellite TV</option>
+                  <option value="416">Science</option>
+                  <option value="417">Sea Transport</option>
+                  <option value="418">Securities</option>
+                  <option value="419">Social Services</option>
+                  <option value="420">Steel</option>
+                  <option value="421">Substance Abuse Services</option>
+                  <option value="422">Supply Chain</option>
+                  <option value="423">Tax</option>
+                  <option value="424">Taxi Services</option>
+                  <option value="425">Textile</option>
+                  <option value="426">Timber</option>
+                  <option value="427">Training</option>
+                  <option value="428">Transportation</option>
+                  <option value="429">Truck</option>
+                  <option value="430">Tutoring</option>
+                  <option value="431">Unions </option>
+                  <option value="432">Vegetables </option>
+                  <option value="433">Virtual Reality</option>
+                  <option value="434">Waste Management</option>
+                  <option value="435">Weapons</option>
+                  <option value="436">Web Software Development</option>
+                  <option value="437">Digital</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="department" class="labelBox">LinkedIn Profile URL:</label><br>
+                <input class="form-input" type="text" name="username">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Home Language:<span class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="username">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Other Languages:</label><br>
+                <input class="form-input" type="text" name="username">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Gender:<span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option>Male</option>
+                  <option>female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Ethnic Group: <span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option>Asian</option>
+                  <option>Oriental</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Coloured</option>
+                  <option>Indian</option>
+                  <option>Hisppanic/Latino</option>
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Date Of Birth: <span class="star-span">*</span></label><br>
+                <input class="dob" type="date" id="birthday" name="birthday">
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Highest Qualification: <span
+                    class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option>Doctorate</option>
+                  <option>Masters</option>
+                  <option>Honours</option>
+                  <option>Bachelors</option>
+                  <option>Diploma</option>
+                  <option>Certificate</option>
+                  <option>Matric</option>
+                  <option>N1</option>
+                  <option>N2</option>
+                  <option>N3</option>
+                  <option>N4</option>
+                  <option>N5</option>
+                  <option>Secondry Schooling</option>
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="department" class="labelBox">Qualification/Field of study <span
+                    class="star-span">*</span></label><br>
+                <input class="form-input" type="text" name="username">
+              </div>
+              <div class="inputLabel">
+                <label class="labelBox">Town: <span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option value="Please select a Town">Please select a Town</option>
+                  <option value="other">other</option>
+                  <option value="Aberdeen">Aberdeen</option>
+                  <option value="Adelaide">Adelaide</option>
+                  <option value="Albert Falls">Albert Falls</option>
+                  <option value="Albertinia">Albertinia</option>
+                  <option value="Alberton">Alberton</option>
+                  <option value="Alexander Bay">Alexander Bay</option>
+                  <option value="Alexandra (Township North of Johannesburg)">Alexandra (Township North of Johannesburg)
+                  </option>
+                  <option value="Alexandra">Alexandra</option>
+                  <option value="Alice (Edikeni in Xhosa)">Alice (Edikeni in Xhosa)</option>
+                  <option value="Aliwal North">Aliwal North</option>
+                  <option value="Allanridge">Allanridge</option>
+                  <option value="Alldays">Alldays</option>
+                  <option value="Amanzimtoti">Amanzimtoti</option>
+                  <option value="Amersfoort">Amersfoort</option>
+                  <option value="Amsterdam">Amsterdam</option>
+                  <option value="Anerley">Anerley</option>
+                  <option value="Arlington">Arlington</option>
+                  <option value="Arniston">Arniston</option>
+                  <option value="Ashton">Ashton</option>
+                  <option value="Askham">Askham</option>
+                  <option value="Aurora">Aurora</option>
+                  <option value="Babanango">Babanango</option>
+                  <option value="Badplaas">Badplaas</option>
+                  <option value="Balfour">Balfour</option>
+                  <option value="Balgowan">Balgowan</option>
+                  <option value="Ballito">Ballito</option>
+                  <option value="Bandelierkop">Bandelierkop</option>
+                  <option value="Barberton">Barberton</option>
+                  <option value="Barkly East">Barkly East</option>
+                  <option value="Bathurst">Bathurst</option>
+                  <option value="Baviaanskloof">Baviaanskloof</option>
+                  <option value="Bedfordview">Bedfordview</option>
+                  <option value="Bela Bela (previously Warmbaths)">Bela Bela (previously Warmbaths)</option>
+                  <option value="Belfast">Belfast</option>
+                  <option value="Benoni">Benoni</option>
+                  <option value="Bergville">Bergville</option>
+                  <option value="Bethal">Bethal</option>
+                  <option value="Bethlehem">Bethlehem</option>
+                  <option value="Bethulie">Bethulie</option>
+                  <option value="Bhisho (Capital of Eastern Cape)">Bhisho (Capital of Eastern Cape)</option>
+                  <option value="Bloemhof">Bloemhof</option>
+                  <option value="Boksburg">Boksburg</option>
+                  <option value="Bonza Bay">Bonza Bay</option>
+                  <option value="Bosbokrand">Bosbokrand</option>
+                  <option value="Boshof">Boshof</option>
+                  <option value="Boston">Boston</option>
+                  <option value="Bothaville">Bothaville</option>
+                  <option value="Botshabelo">Botshabelo</option>
+                  <option value="Brakpan">Brakpan</option>
+                  <option value="Brandfort">Brandfort</option>
+                  <option value="Bredasdorp">Bredasdorp</option>
+                  <option value="Breyten">Breyten</option>
+                  <option value="Brits">Brits</option>
+                  <option value="Britstown">Britstown</option>
+                  <option value="Bronkhorstspruit">Bronkhorstspruit</option>
+                  <option value="Bultfontein">Bultfontein</option>
+                  <option value="Bulwer">Bulwer</option>
+                  <option value="Burgersdorp (Oldest town in the north of the Eastern Cape)">Burgersdorp (Oldest town in
+                    the north of the Eastern Cape)</option>
+                  <option value="Byrne">Byrne</option>
+                  <option value="Caledon">Caledon</option>
+                  <option value="Carletonville">Carletonville</option>
+                  <option value="Carolina">Carolina</option>
+                  <option value="Cathcart">Cathcart</option>
+                  <option value="Catoridge">Catoridge</option>
+                  <option value="Cedarville">Cedarville</option>
+                  <option value="Centurion">Centurion</option>
+                  <option value="Ceres">Ceres</option>
+                  <option value="Charlestown">Charlestown</option>
+                  <option value="Chrissiesmeer">Chrissiesmeer</option>
+                  <option value="Clarens">Clarens</option>
+                  <option value="Clocolan">Clocolan</option>
+                  <option value="Colenso">Colenso</option>
+                  <option value="Cornelia">Cornelia</option>
+                  <option value="Cradock">Cradock</option>
+                  <option value="Cullinan">Cullinan</option>
+                  <option value="Dannhauser">Dannhauser</option>
+                  <option value="Dargle">Dargle</option>
+                  <option value="Daveyton">Daveyton</option>
+                  <option value="De Aar">De Aar</option>
+                  <option value="Dealesville">Dealesville</option>
+                  <option value="Delmas">Delmas</option>
+                  <option value="Deneysville">Deneysville</option>
+                  <option value="Dewetsdorp">Dewetsdorp</option>
+                  <option value="Doonside">Doonside</option>
+                  <option value="Drummond">Drummond</option>
+                  <option value="Duduza">Duduza</option>
+                  <option value="Dullstroom">Dullstroom</option>
+                  <option value="Dundee">Dundee</option>
+                  <option value="Durban">Durban</option>
+                  <option value="Edenburg">Edenburg</option>
+                  <option value="Edenvale">Edenvale</option>
+                  <option value="Edenville">Edenville</option>
+                  <option value="ekuPhakameni">ekuPhakameni</option>
+                  <option value="Elandslaagte">Elandslaagte</option>
+                  <option value="Empangeni">Empangeni</option>
+                  <option value="Ermelo">Ermelo</option>
+                  <option value="Eshowe">Eshowe</option>
+                  <option value="Estcourt">Estcourt</option>
+                  <option value="Evaton">Evaton</option>
+                  <option value="Excelsior">Excelsior</option>
+                  <option value="Fauresmith">Fauresmith</option>
+                  <option value="Ficksburg">Ficksburg</option>
+                  <option value="Fisherhaven">Fisherhaven</option>
+                  <option value="Fort Beaufort">Fort Beaufort</option>
+                  <option value="Fouriesburg">Fouriesburg</option>
+                  <option value="Frankfort">Frankfort</option>
+                  <option value="Franklin">Franklin</option>
+                  <option value="Gcuwa (was Butterworth )">Gcuwa (was Butterworth )</option>
+                  <option value="George">George</option>
+                  <option value="Germiston">Germiston</option>
+                  <option value="Giyani">Giyani</option>
+                  <option value="Glencoe">Glencoe</option>
+                  <option value="Graaff Reinet">Graaff Reinet</option>
+                  <option value="Grahamstown">Grahamstown</option>
+                  <option value="Graskop">Graskop</option>
+                  <option value="Greylingstad">Greylingstad</option>
+                  <option value="Greytown">Greytown</option>
+                  <option value="Groblersdal">Groblersdal</option>
+                  <option value="Haenertsburg">Haenertsburg</option>
+                  <option value="Hammanskraal">Hammanskraal</option>
+                  <option value="Harrismith">Harrismith</option>
+                  <option value="Hartebeespoort">Hartebeespoort</option>
+                  <option value="Hattingspruit">Hattingspruit</option>
+                  <option value="Hazyview">Hazyview</option>
+                  <option value="Hectorspruit">Hectorspruit</option>
+                  <option value="Heidelberg">Heidelberg</option>
+                  <option value="Heidelberg">Heidelberg</option>
+                  <option value="Heilbron">Heilbron</option>
+                  <option value="Henley on Klip">Henley on Klip</option>
+                  <option value="Hennenman">Hennenman</option>
+                  <option value="Hermanus">Hermanus</option>
+                  <option value="Hertzogville">Hertzogville</option>
+                  <option value="Hibberdene">Hibberdene</option>
+                  <option value="Hillcrest">Hillcrest</option>
+                  <option value="Hilton">Hilton</option>
+                  <option value="Himeville">Himeville</option>
+                  <option value="Hobhouse">Hobhouse</option>
+                  <option value="Hoedspruit">Hoedspruit</option>
+                  <option value="Hoopstad">Hoopstad</option>
+                  <option value="Howick">Howick</option>
+                  <option value="Humansdorp">Humansdorp</option>
+                  <option value="Idutywa">Idutywa</option>
+                  <option value="Ifafa Beach">Ifafa Beach</option>
+                  <option value="Illovo Beach">Illovo Beach</option>
+                  <option value="Impendile">Impendile</option>
+                  <option value="Inanda">Inanda</option>
+                  <option value="Ingwavuma">Ingwavuma</option>
+                  <option value="Irene">Irene</option>
+                  <option value="Isando">Isando</option>
+                  <option value="Isipingo Beach">Isipingo Beach</option>
+                  <option value="Itumeleng">Itumeleng</option>
+                  <option value="Ixopo">Ixopo</option>
+                  <option value="Jacobsdal">Jacobsdal</option>
+                  <option value="Jagersfontein">Jagersfontein</option>
+                  <option value="Jansenville">Jansenville</option>
+                  <option value="Jeffreys Bay">Jeffreys Bay</option>
+                  <option value="Kaapmuiden">Kaapmuiden</option>
+                  <option value="Karridene">Karridene</option>
+                  <option value="Katlehong">Katlehong</option>
+                  <option value="Kempton Park">Kempton Park</option>
+                  <option value="Kenton-on-Sea">Kenton-on-Sea</option>
+                  <option value="Kestell">Kestell</option>
+                  <option value="Keurboomstrand">Keurboomstrand</option>
+                  <option value="Kgotsong">Kgotsong</option>
+                  <option value="Khayelitsha">Khayelitsha</option>
+                  <option value="King William&#39;s Town">King William&#39;s Town</option>
+                  <option value="Kingsburgh">Kingsburgh</option>
+                  <option value="Kinross">Kinross</option>
+                  <option value="Kirkwood">Kirkwood</option>
+                  <option value="Klerksdorp">Klerksdorp</option>
+                  <option value="Kloof">Kloof</option>
+                  <option value="Knysna">Knysna</option>
+                  <option value="Koffiefontein">Koffiefontein</option>
+                  <option value="Kokstad">Kokstad</option>
+                  <option value="Komatipoort">Komatipoort</option>
+                  <option value="Koppies">Koppies</option>
+                  <option value="Kromdraai">Kromdraai</option>
+                  <option value="Kroonstad">Kroonstad</option>
+                  <option value="Krugersdorp">Krugersdorp</option>
+                  <option value="KwaDukuza - (previously Stanger)">KwaDukuza - (previously Stanger)</option>
+                  <option value="KwaMashu">KwaMashu</option>
+                  <option value="KwaMhlanga">KwaMhlanga</option>
+                  <option value="KwaThema">KwaThema</option>
+                  <option value="La Lucia">La Lucia</option>
+                  <option value="La Mercy">La Mercy</option>
+                  <option value="Ladybrand">Ladybrand</option>
+                  <option value="Ladysmith">Ladysmith</option>
+                  <option value="Lenasia">Lenasia</option>
+                  <option value="Lephalale (previously Ellisras)">Lephalale (previously Ellisras)</option>
+                  <option value="Lichtenburg">Lichtenburg</option>
+                  <option value="Lindley">Lindley</option>
+                  <option value="Littleton">Littleton</option>
+                  <option value="Loopspruit">Loopspruit</option>
+                  <option value="Louis Trichardt (From June 2003 to March 2007 known as Makhado)">Louis Trichardt (From
+                    June 2003 to March 2007 known as Makhado)</option>
+                  <option value="Louwsburg">Louwsburg</option>
+                  <option value="Luckhoff">Luckhoff</option>
+                  <option value="Lydenburg">Lydenburg</option>
+                  <option value="Machadodorp">Machadodorp</option>
+                  <option value="Madadeni">Madadeni</option>
+                  <option value="Mafikeng">Mafikeng</option>
+                  <option value="Magaliesburg">Magaliesburg</option>
+                  <option value="Mahlabatini">Mahlabatini</option>
+                  <option value="Makeleketla">Makeleketla</option>
+                  <option value="Malelane">Malelane</option>
+                  <option value="Mamelodi">Mamelodi</option>
+                  <option value="Mandini">Mandini</option>
+                  <option value="Marble Hall">Marble Hall</option>
+                  <option value="Margate">Margate</option>
+                  <option value="Marquard">Marquard</option>
+                  <option value="Matatiele">Matatiele</option>
+                  <option value="Melmoth">Melmoth</option>
+                  <option value="Memel">Memel</option>
+                  <option value="Merrivale">Merrivale</option>
+                  <option value="Meyerton">Meyerton</option>
+                  <option value="Middelburg">Middelburg</option>
+                  <option value="Midrand">Midrand</option>
+                  <option value="Mkuze">Mkuze</option>
+                  <option value="Mmabatho">Mmabatho</option>
+                  <option value="Modder River">Modder River</option>
+                  <option value="Modimolle (previously Nylstroom)">Modimolle (previously Nylstroom)</option>
+                  <option value="Mokopane (previously Potgietersrus)">Mokopane (previously Potgietersrus)</option>
+                  <option value="Mooirivier">Mooirivier</option>
+                  <option value="Morgenzon">Morgenzon</option>
+                  <option value="Mossel Bay">Mossel Bay</option>
+                  <option value="Mount Edgecombe">Mount Edgecombe</option>
+                  <option value="Mthatha">Mthatha</option>
+                  <option value="Mtubatuba">Mtubatuba</option>
+                  <option value="Mtunzini">Mtunzini</option>
+                  <option value="Muden">Muden</option>
+                  <option value="Muldersdrift">Muldersdrift</option>
+                  <option value="Musina (previously Messina)">Musina (previously Messina)</option>
+                  <option value="Naboomspruit">Naboomspruit</option>
+                  <option value="Nelspruit">Nelspruit</option>
+                  <option value="New Germany">New Germany</option>
+                  <option value="New Hanover">New Hanover</option>
+                  <option value="Newcastle">Newcastle</option>
+                  <option value="Ngcobo">Ngcobo</option>
+                  <option value="Nieu-Bethesda">Nieu-Bethesda</option>
+                  <option value="Nigel">Nigel</option>
+                  <option value="Nongoma">Nongoma</option>
+                  <option value="Nottingham Road">Nottingham Road</option>
+                  <option value="Odendaalsrus">Odendaalsrus</option>
+                  <option value="Ogies">Ogies</option>
+                  <option value="Ohrigstad">Ohrigstad</option>
+                  <option value="Orania">Orania</option>
+                  <option value="Oranjeville">Oranjeville</option>
+                  <option value="Orkney">Orkney</option>
+                  <option value="Oyster Bay">Oyster Bay</option>
+                  <option value="Paarl">Paarl</option>
+                  <option value="Palm Beach">Palm Beach</option>
+                  <option value="Park Rynie">Park Rynie</option>
+                  <option value="Parys">Parys</option>
+                  <option value="Paul Roux">Paul Roux</option>
+                  <option value="Paulpietersburg">Paulpietersburg</option>
+                  <option value="Pennington">Pennington</option>
+                  <option value="Perdekop">Perdekop</option>
+                  <option value="Petrus Steyn">Petrus Steyn</option>
+                  <option value="Petrusburg">Petrusburg</option>
+                  <option value="Philippolis">Philippolis</option>
+                  <option value="Phuthaditjhaba">Phuthaditjhaba</option>
+                  <option value="Piet Retief">Piet Retief</option>
+                  <option value="Pilgrim&#39;s Rest">Pilgrim&#39;s Rest</option>
+                  <option value="Pinetown">Pinetown</option>
+                  <option value="Plettenberg Bay">Plettenberg Bay</option>
+                  <option value="Polokwane (previously Pietersburg)">Polokwane (previously Pietersburg)</option>
+                  <option value="Pomeroy">Pomeroy</option>
+                  <option value="Pongola">Pongola</option>
+                  <option value="Port Alfred">Port Alfred</option>
+                  <option value="Port Edward">Port Edward</option>
+                  <option value="Port Shepstone">Port Shepstone</option>
+                  <option value="Prieska">Prieska</option>
+                  <option value="Queensburgh">Queensburgh</option>
+                  <option value="Queenstown">Queenstown</option>
+                  <option value="Ramsgate">Ramsgate</option>
+                  <option value="Randburg">Randburg</option>
+                  <option value="Randfontein">Randfontein</option>
+                  <option value="Ratanda">Ratanda</option>
+                  <option value="Reddersburg">Reddersburg</option>
+                  <option value="Reitz">Reitz</option>
+                  <option value="Richards Bay">Richards Bay</option>
+                  <option value="Richmond">Richmond</option>
+                  <option value="Roodepoort">Roodepoort</option>
+                  <option value="Rooihuiskraal">Rooihuiskraal</option>
+                  <option value="Rosendal">Rosendal</option>
+                  <option value="Rouxville">Rouxville</option>
+                  <option value="Rustenburg">Rustenburg</option>
+                  <option value="Sabie">Sabie</option>
+                  <option value="Salt Rock">Salt Rock</option>
+                  <option value="Sandton">Sandton</option>
+                  <option value="Sasolburg">Sasolburg</option>
+                  <option value="Schweizer-Reneke">Schweizer-Reneke</option>
+                  <option value="Scottburgh">Scottburgh</option>
+                  <option value="Sebokeng">Sebokeng</option>
+                  <option value="Secunda">Secunda</option>
+                  <option value="Senekal">Senekal</option>
+                  <option value="Sezela">Sezela</option>
+                  <option value="Sharpeville">Sharpeville</option>
+                  <option value="Shelly Beach">Shelly Beach</option>
+                  <option value="Smithfield">Smithfield</option>
+                  <option value="Somerset West">Somerset West</option>
+                  <option value="Southbroom">Southbroom</option>
+                  <option value="Soweto">Soweto</option>
+                  <option value="Springbok">Springbok</option>
+                  <option value="Springfontein">Springfontein</option>
+                  <option value="Springs">Springs</option>
+                  <option value="St Francis Bay">St Francis Bay</option>
+                  <option value="St Lucia">St Lucia</option>
+                  <option value="St Michael&#39;s-on-Sea">St Michael&#39;s-on-Sea</option>
+                  <option value="Standerton">Standerton</option>
+                  <option value="Stellenbosch">Stellenbosch</option>
+                  <option value="Steynsrus">Steynsrus</option>
+                  <option value="Strand">Strand</option>
+                  <option value="Stutterheim">Stutterheim</option>
+                  <option value="Swartberg">Swartberg</option>
+                  <option value="Swellendam">Swellendam</option>
+                  <option value="Swinburne">Swinburne</option>
+                  <option value="Tarkastad">Tarkastad</option>
+                  <option value="Tembisa">Tembisa</option>
+                  <option value="Thaba Nchu">Thaba Nchu</option>
+                  <option value="Thabazimbi">Thabazimbi</option>
+                  <option value="Theunissen">Theunissen</option>
+                  <option value="Thohoyandou">Thohoyandou</option>
+                  <option value="Thokoza">Thokoza</option>
+                  <option value="Tongaat">Tongaat</option>
+                  <option value="Trichardt">Trichardt</option>
+                  <option value="Trompsburg">Trompsburg</option>
+                  <option value="Tsakane">Tsakane</option>
+                  <option value="Tugela Ferry">Tugela Ferry</option>
+                  <option value="Tulbagh">Tulbagh</option>
+                  <option value="Tweeling">Tweeling</option>
+                  <option value="Tweespruit">Tweespruit</option>
+                  <option value="Ubombo">Ubombo</option>
+                  <option value="Uitenhage">Uitenhage</option>
+                  <option value="Ulundi">Ulundi</option>
+                  <option value="Umbogintwini">Umbogintwini</option>
+                  <option value="Umdloti">Umdloti</option>
+                  <option value="Umgababa">Umgababa</option>
+                  <option value="Umhlanga Rocks">Umhlanga Rocks</option>
+                  <option value="Umkomaas">Umkomaas</option>
+                  <option value="Umlazi">Umlazi</option>
+                  <option value="Umtentweni">Umtentweni</option>
+                  <option value="uMthatha (previously Umtata)">uMthatha (previously Umtata)</option>
+                  <option value="Umzinto">Umzinto</option>
+                  <option value="Umzumbe">Umzumbe</option>
+                  <option value="Underberg">Underberg</option>
+                  <option value="Upington">Upington</option>
+                  <option value="Utrecht">Utrecht</option>
+                  <option value="Uvongo">Uvongo</option>
+                  <option value="Vaalbank">Vaalbank</option>
+                  <option value="Vaalwater">Vaalwater</option>
+                  <option value="Van Reenen">Van Reenen</option>
+                  <option value="Van Stadensrus">Van Stadensrus</option>
+                  <option value="Vanderbijlpark">Vanderbijlpark</option>
+                  <option value="Ventersburg">Ventersburg</option>
+                  <option value="Vereeniging">Vereeniging</option>
+                  <option value="Verkeerdevlei">Verkeerdevlei</option>
+                  <option value="Verulam">Verulam</option>
+                  <option value="Viljoenskroon">Viljoenskroon</option>
+                  <option value="Villiers">Villiers</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Vivo">Vivo</option>
+                  <option value="Volksrust">Volksrust</option>
+                  <option value="Vosloorus">Vosloorus</option>
+                  <option value="Vrede">Vrede</option>
+                  <option value="Vredefort">Vredefort</option>
+                  <option value="Vryburg">Vryburg</option>
+                  <option value="Vryheid">Vryheid</option>
+                  <option value="Wakkerstroom">Wakkerstroom</option>
+                  <option value="Warden">Warden</option>
+                  <option value="Warner Beach">Warner Beach</option>
+                  <option value="Wartburg">Wartburg</option>
+                  <option value="Wasbank">Wasbank</option>
+                  <option value="Waterval Boven">Waterval Boven</option>
+                  <option value="Waterval Onder">Waterval Onder</option>
+                  <option value="Weenen">Weenen</option>
+                  <option value="Welkom">Welkom</option>
+                  <option value="Wepener">Wepener</option>
+                  <option value="Wesselsbron">Wesselsbron</option>
+                  <option value="Westonaria">Westonaria</option>
+                  <option value="Westville">Westville</option>
+                  <option value="White River">White River</option>
+                  <option value="Widenham">Widenham</option>
+                  <option value="Wilderness">Wilderness</option>
+                  <option value="Winburg">Winburg</option>
+                  <option value="Winkelspruit">Winkelspruit</option>
+                  <option value="Winterton">Winterton</option>
+                  <option value="Witbank">Witbank</option>
+                  <option value="Worcester">Worcester</option>
+                  <option value="York">York</option>
+                  <option value="Zastron">Zastron</option>
+                  <option value="Zeerust">Zeerust</option>
+                  <option value="Zwelitsha">Zwelitsha</option>
+                  <option value="Johannesburg Town">Johannesburg Town</option>
+                  <option value="Bez Valley">Bez Valley</option>
+                  <option value="Malvern">Malvern</option>
+                  <option value="East London">East London</option>
+                  <option value="Ormonde">Ormonde</option>
+                  <option value="Port Elizabeth Town">Port Elizabeth Town</option>
+                  <option value="Bryanston">Bryanston</option>
+                  <option value="Bramly">Bramly</option>
+                  <option value="Zxavier">Zxavier</option>
+                  <option value="Cape Town">Cape Town</option>
+                  <option value="Muizenberg">Muizenberg</option>
+                  <option value="Pretoria Central">Pretoria Central</option>
+                  <option value="Weltevreden Park">Weltevreden Park</option>
+                  <option value="Beaufort West">Beaufort West</option>
+                  <option value="Clanwilliam">Clanwilliam</option>
+                  <option value="Franschhoek">Franschhoek</option>
+                  <option value="Gordons Bay">Gordons Bay</option>
+                  <option value="Overberg">Overberg</option>
+                  <option value="Hermanus">Hermanus</option>
+                  <option value="Knysna">Knysna</option>
+                  <option value="Langebaan">Langebaan</option>
+                  <option value="Menlyn">Menlyn</option>
+                  <option value="Sunnyside">Sunnyside</option>
+                  <option value="Marabastad">Marabastad</option>
+                  <option value="Ennedale">Ennedale</option>
+                  <option value="Eldorado Park">Eldorado Park</option>
+                  <option value="Eikenhoof">Eikenhoof</option>
+                  <option value="Kibler Park">Kibler Park</option>
+                  <option value="Orange Farm">Orange Farm</option>
+                  <option value="Lenasia South">Lenasia South</option>
+                  <option value="Mondeor">Mondeor</option>
+                  <option value="Hillbrow">Hillbrow</option>
+                  <option value="Park town">Park town</option>
+                  <option value="Newtown">Newtown</option>
+                  <option value="Highlands">Highlands</option>
+                  <option value="Rosebank">Rosebank</option>
+                  <option value="Mokhado - Venda">Mokhado - Venda</option>
+                  <option value="Palaborwa">Palaborwa</option>
+                  <option value="Tzaneen">Tzaneen</option>
+                  <option value="Potchestroom">Potchestroom</option>
+                  <option value="Kgutsong">Kgutsong</option>
+                  <option value="Morningside">Morningside</option>
+                  <option value="Port St. Johns">Port St. Johns</option>
+                  <option value="Willomore">Willomore</option>
+                  <option value="Wynberg">Wynberg</option>
+                  <option value="Sunning Hill">Sunning Hill</option>
+                  <option value="Wychwood">Wychwood</option>
+                  <option value="Ferndale">Ferndale</option>
+                  <option value="Palm Springs">Palm Springs</option>
+                  <option value="Beverly Hills">Beverly Hills</option>
+                  <option value="Sebokeng">Sebokeng</option>
+                  <option value="Ga-Rankua">Ga-Rankua</option>
+                  <option value="Shoshanguve">Shoshanguve</option>
+                  <option value="Pierre van Ryneveld">Pierre van Ryneveld</option>
+                  <option value="Meyerpark">Meyerpark</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Newlands">Newlands</option>
+                  <option value="Green point">Green point</option>
+                  <option value="Belville">Belville</option>
+                  <option value="Pretoria East">Pretoria East</option>
+                  <option value="Faerie Glen">Faerie Glen</option>
+                  <option value="Laudium">Laudium</option>
+                  <option value="Glenvista">Glenvista</option>
+                  <option value="Rivonia">Rivonia</option>
+                  <option value="Fourways">Fourways</option>
+                  <option value="Houghton">Houghton</option>
+                  <option value="Johannesburg Central">Johannesburg Central</option>
+                  <option value="Johannesburg South">Johannesburg South</option>
+                  <option value="Johannesburg East">Johannesburg East</option>
+                  <option value="Johannesburg West">Johannesburg West</option>
+                  <option value="Johannesburg North">Johannesburg North</option>
+                  <option value="Northcliff Faerie Glen">Northcliff Faerie Glen</option>
+                  <option value="Arcadia">Arcadia</option>
+                  <option value="Pretoria South">Pretoria South</option>
+                  <option value="Pretoria West">Pretoria West</option>
+                  <option value="Pretoria North">Pretoria North</option>
+                  <option value="Houghton">Houghton</option>
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="username" class="labelBox">Province:
+                  <span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option value="other">other</option>
+                  <option value="Eastern Cape">Eastern Cape</option>
+                  <option value="Free State">Free State</option>
+                  <option value="Gauteng">Gauteng</option>
+                  <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                  <option value="Limpopo">Limpopo</option>
+                  <option value="Mpumalanga">Mpumalanga</option>
+                  <option value="Northern Cape">Northern Cape</option>
+                  <option value="North West">North West</option>
+                  <option value="Western Cape">Western Cape</option>
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label for="username" class="labelBox">City:
+                  <span class="star-span">*</span></label><br>
+                <select class="dropdowns">
+                  <option value="Please select a City">Please select a City</option>
+                  <option value="other">other</option>
+                  <option value="Buffalo City (East London)">Buffalo City (East London)</option>
+                  <option value="Cape Town">Cape Town</option>
+                  <option value="Ekurhuleni (East Rand)">Ekurhuleni (East Rand)</option>
+                  <option value="eThekwini (Durban)">eThekwini (Durban)</option>
+                  <option value="Johannesburg (Incl. Northern Suburbs)">Johannesburg (Incl. Northern Suburbs)</option>
+                  <option value="Mangaung (Bloemfontein)">Mangaung (Bloemfontein)</option>
+                  <option value="Msunduzi (Pietermaritzburg)">Msunduzi (Pietermaritzburg)</option>
+                  <option value="Nelson Mandela Metropole (Gqeberha Port Elizabeth)">Nelson Mandela Metropole (Gqeberha
+                    Port Elizabeth)</option>
+                  <option value="Tshwane (Pretoria)">Tshwane (Pretoria)</option>
+                  <option value="Johannesburg South">Johannesburg South</option>
+                  <option value="Johannesburg (West Rand)">Johannesburg (West Rand)</option>
+                  <option value="Vereeniging">Vereeniging</option>
+                  <option value="Vanderbijl">Vanderbijl</option>
+                  <option value="Johannesburg (CBD)">Johannesburg (CBD)</option>
+                  <option value="Johannesburg">Johannesburg</option>
+                  <option value="Kimberly">Kimberly</option>
+                  <option value="Mbombela (formerly Nelspruit)">Mbombela (formerly Nelspruit)</option>
+                  <option value="International">International</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Department Contact Details-->
+        <div class="grid-item form-headers">Salary Requirements:</div>
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label class="labelBox">Currency:</label><br>
+                <select class="dropdowns">
+                  <option value="1">Albania Leke</option>
+                  <option value="2">America Dollars</option>
+                  <option value="3">Afghanistan Afghanis</option>
+                  <option value="4">Argentina Pesos</option>
+                  <option value="5">Aruba Guilders</option>
+                  <option value="6">Australia Dollars</option>
+                  <option value="7">Azerbaijan New Manats</option>
+                  <option value="8">Bahamas Dollars</option>
+                  <option value="9">Barbados Dollars</option>
+                  <option value="10">Belarus Rubles</option>
+                  <option value="11">Belgium Euro</option>
+                  <option value="12">Beliz Dollars</option>
+                  <option value="13">Bermuda Dollars</option>
+                  <option value="14">Bolivia Bolivianos</option>
+                  <option value="15">Bosnia and Herzegovina Convertible Marka</option>
+                  <option value="16">Botswana Pula</option>
+                  <option value="17">Bulgaria Leva</option>
+                  <option value="18">Brazil Reais</option>
+                  <option value="19">Britain (United Kingdom) Pounds</option>
+                  <option value="20">Brunei Darussalam Dollars</option>
+                  <option value="21">Cambodia Riels</option>
+                  <option value="22">Canada Dollars</option>
+                  <option value="23">Cayman Islands Dollars</option>
+                  <option value="24">Chile Pesos</option>
+                  <option value="25">China Yuan Renminbi</option>
+                  <option value="26">Colombia Pesos</option>
+                  <option value="27">Costa Rica Col&#243;n</option>
+                  <option value="28">Croatia Kuna</option>
+                  <option value="29">Cuba Pesos</option>
+                  <option value="30">Cyprus Euro</option>
+                  <option value="31">Czech Republic Koruny</option>
+                  <option value="32">Denmark Kroner</option>
+                  <option value="33">Dominican Republic Pesos</option>
+                  <option value="34">East Caribbean Dollars</option>
+                  <option value="35">Egypt Pounds</option>
+                  <option value="36">El Salvador Colones</option>
+                  <option value="37">England (United Kingdom) Pounds</option>
+                  <option value="38">Euro Euro</option>
+                  <option value="39">Falkland Islands Pounds</option>
+                  <option value="40">Fiji Dollars</option>
+                  <option value="41">France Euro</option>
+                  <option value="42">Ghana Cedis</option>
+                  <option value="43">Gibraltar Pounds</option>
+                  <option value="44">Greece Euro</option>
+                  <option value="45">Guatemala Quetzales</option>
+                  <option value="46">Guernsey Pounds</option>
+                  <option value="47">Guyana Dollars</option>
+                  <option value="48">Holland (Netherlands) Euro</option>
+                  <option value="49">Honduras Lempiras</option>
+                  <option value="50">Hong Kong Dollars</option>
+                  <option value="51">Hungary Forint</option>
+                  <option value="52">Iceland Kronur</option>
+                  <option value="53">India Rupees</option>
+                  <option value="54">Indonesia Rupiahs</option>
+                  <option value="55">Iran Rials</option>
+                  <option value="56">Ireland Euro</option>
+                  <option value="57">Isle of Man Pounds</option>
+                  <option value="58">Israel New Shekels</option>
+                  <option value="59">Italy Euro</option>
+                  <option value="60">Jamaica Dollars</option>
+                  <option value="61">Japan Yen</option>
+                  <option value="62">Jersey Pounds</option>
+                  <option value="63">Kazakhstan Tenge</option>
+                  <option value="64">Korea (North) Won</option>
+                  <option value="65">Korea (South) Won</option>
+                  <option value="66">Kyrgyzstan Soms</option>
+                  <option value="67">Laos Kips</option>
+                  <option value="68">Latvia Lati</option>
+                  <option value="69">Lebanon Pounds</option>
+                  <option value="70">Liberia Dollars</option>
+                  <option value="71">Liechtenstein Switzerland Francs</option>
+                  <option value="72">Lithuania Litai</option>
+                  <option value="73">Luxembourg Euro</option>
+                  <option value="74">Macedonia Denars</option>
+                  <option value="75">Malaysia Ringgits</option>
+                  <option value="76">Malta Euro</option>
+                  <option value="77">Mauritius Rupees</option>
+                  <option value="78">Mexico Pesos</option>
+                  <option value="79">Mongolia Tugriks</option>
+                  <option value="80">Mozambique Meticais</option>
+                  <option value="81">Namibia Dollars</option>
+                  <option value="82">Nepal Rupees</option>
+                  <option value="83">Netherlands Antilles Guilders</option>
+                  <option value="84">Netherlands Euro</option>
+                  <option value="85">New Zealand Dollars</option>
+                  <option value="86">Nicaragua Cordobas</option>
+                  <option value="87">Nigeria Nairas</option>
+                  <option value="88">North Korea Won</option>
+                  <option value="89">Norway Krone</option>
+                  <option value="90">Oman Rials</option>
+                  <option value="91">Pakistan Rupees</option>
+                  <option value="92">Panama Balboa</option>
+                  <option value="93">Paraguay Guarani</option>
+                  <option value="94">Peru Nuevos Soles</option>
+                  <option value="95">Philippines Pesos</option>
+                  <option value="96">Poland Zlotych</option>
+                  <option value="97">Qatar Rials</option>
+                  <option value="98">Romania New Lei</option>
+                  <option value="99">Russia Rubles</option>
+                  <option value="100">Saint Helena Pounds</option>
+                  <option value="101">Saudi Arabia Riyals</option>
+                  <option value="102">Serbia Dinars</option>
+                  <option value="103">Seychelles Rupees</option>
+                  <option value="104">Singapore Dollars</option>
+                  <option value="105">Slovenia Euro</option>
+                  <option value="106">Solomon Islands Dollars</option>
+                  <option value="107">Somalia Shillings</option>
+                  <option selected="selected" value="108">South Africa Rand</option>
+                  <option value="109">South Korea Won</option>
+                  <option value="110">Spain Euro</option>
+                  <option value="111">Sri Lanka Rupees</option>
+                  <option value="112">Sweden Kronor</option>
+                  <option value="113">Switzerland Francs</option>
+                  <option value="114">Suriname Dollars</option>
+                  <option value="115">Syria Pounds</option>
+                  <option value="116">Taiwan New Dollars</option>
+                  <option value="117">Thailand Baht</option>
+                  <option value="118">Trinidad and Tobago Dollars</option>
+                  <option value="119">Turkey Lira</option>
+                  <option value="120">Turkey Liras</option>
+                  <option value="121">Tuvalu Dollars</option>
+                  <option value="122">Ukraine Hryvnia</option>
+                  <option value="123">United Kingdom Pounds</option>
+                  <option value="124">United States of America Dollars</option>
+                  <option value="125">Uruguay Pesos</option>
+                  <option value="126">Uzbekistan Sums</option>
+                  <option value="127">Vatican City Euro</option>
+                  <option value="128">Venezuela Bolivares Fuertes</option>
+                  <option value="129">Vietnam Dong</option>
+                  <option value="130">Yemen Rials</option>
+                  <option value="131">Zimbabwe Zimbabwe Dollars</option>
+
+                </select>
+              </div>
+              <div class="inputLabel">
+                <label class="labelBox">Salary Range:</label><br>
+                <label>
+                  <span class="text-resize">From:</span> </label>
+                <select class="dropdowns-small">
+                  <option value="0">0</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                  <option value="15000">15000</option>
+                  <option value="20000">20000</option>
+                  <option value="25000">25000</option>
+                  <option value="30000">30000</option>
+                  <option value="35000">35000</option>
+                  <option value="40000">40000</option>
+                  <option value="45000">45000</option>
+                  <option value="50000">50000</option>
+                  <option value="55000">55000</option>
+                  <option value="60000">60000</option>
+                  <option value="65000">65000</option>
+                  <option value="70000">70000</option>
+                  <option value="75000">75000</option>
+                  <option value="80000">80000</option>
+                  <option value="85000">85000</option>
+                  <option value="90000">90000</option>
+                  <option value="95000">95000</option>
+                  <option value="100000">100000</option>
+                  <option value="105000">105000</option>
+                  <option value="110000">110000</option>
+                  <option value="115000">115000</option>
+                  <option value="120000">120000</option>
+                  <option value="125000">125000</option>
+                  <option value="130000">130000</option>
+                  <option value="135000">135000</option>
+                  <option value="140000">140000</option>
+                  <option value="145000">145000</option>
+                  <option value="150000">150000</option>
+                  <option value="155000">155000</option>
+                  <option value="160000">160000</option>
+                  <option value="165000">165000</option>
+                  <option value="170000">170000</option>
+                  <option value="175000">175000</option>
+                  <option value="180000">180000</option>
+                  <option value="185000">185000</option>
+                  <option value="190000">190000</option>
+                  <option value="195000">195000</option>
+                  <option value="200000">200000</option>
+                  <option value="205000">205000</option>
+                  <option value="210000">210000</option>
+                  <option value="215000">215000</option>
+                  <option value="220000">220000</option>
+                  <option value="225000">225000</option>
+                  <option value="230000">230000</option>
+                  <option value="235000">235000</option>
+                  <option value="240000">240000</option>
+                  <option value="245000">245000</option>
+                  <option value="250000">250000</option>
+
+                </select>
+                <label>
+                  <span class="text-resize">To:</span></label>
+                <select class="dropdowns-small">
+                  <option value="0">0</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                  <option value="15000">15000</option>
+                  <option value="20000">20000</option>
+                  <option value="25000">25000</option>
+                  <option value="30000">30000</option>
+                  <option value="35000">35000</option>
+                  <option value="40000">40000</option>
+                  <option value="45000">45000</option>
+                  <option value="50000">50000</option>
+                  <option value="55000">55000</option>
+                  <option value="60000">60000</option>
+                  <option value="65000">65000</option>
+                  <option value="70000">70000</option>
+                  <option value="75000">75000</option>
+                  <option value="80000">80000</option>
+                  <option value="85000">85000</option>
+                  <option value="90000">90000</option>
+                  <option value="95000">95000</option>
+                  <option value="100000">100000</option>
+                  <option value="105000">105000</option>
+                  <option value="110000">110000</option>
+                  <option value="115000">115000</option>
+                  <option value="120000">120000</option>
+                  <option value="125000">125000</option>
+                  <option value="130000">130000</option>
+                  <option value="135000">135000</option>
+                  <option value="140000">140000</option>
+                  <option value="145000">145000</option>
+                  <option value="150000">150000</option>
+                  <option value="155000">155000</option>
+                  <option value="160000">160000</option>
+                  <option value="165000">165000</option>
+                  <option value="170000">170000</option>
+                  <option value="175000">175000</option>
+                  <option value="180000">180000</option>
+                  <option value="185000">185000</option>
+                  <option value="190000">190000</option>
+                  <option value="195000">195000</option>
+                  <option value="200000">200000</option>
+                  <option value="205000">205000</option>
+                  <option value="210000">210000</option>
+                  <option value="215000">215000</option>
+                  <option value="220000">220000</option>
+                  <option value="225000">225000</option>
+                  <option value="230000">230000</option>
+                  <option value="235000">235000</option>
+                  <option value="240000">240000</option>
+                  <option value="245000">245000</option>
+                  <option value="250000">250000</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="fax" class="labelBox">Current Monthly Salary:</label><br>
+                <input class="form-input" type="text" id="fax" name="fax" style="height: 30px;">
+              </div>
+              <div class="inputLabel">
+                <label class="labelBox">Hourly Rate:</label><br>
+                <span class="text-resize">From:</span>
+                <select class="dropdowns-small">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                  <option value="35">35</option>
+                  <option value="40">40</option>
+                  <option value="45">45</option>
+                  <option value="50">50</option>
+                  <option value="55">55</option>
+                  <option value="60">60</option>
+                  <option value="65">65</option>
+                  <option value="70">70</option>
+                  <option value="75">75</option>
+                  <option value="80">80</option>
+                  <option value="85">85</option>
+                  <option value="90">90</option>
+                  <option value="95">95</option>
+                  <option value="100">100</option>
+                  <option value="105">105</option>
+                  <option value="110">110</option>
+                  <option value="115">115</option>
+                  <option value="120">120</option>
+                  <option value="125">125</option>
+                  <option value="130">130</option>
+                  <option value="135">135</option>
+                  <option value="140">140</option>
+                  <option value="145">145</option>
+                  <option value="150">150</option>
+                  <option value="155">155</option>
+                  <option value="160">160</option>
+                  <option value="165">165</option>
+                  <option value="170">170</option>
+                  <option value="175">175</option>
+                  <option value="180">180</option>
+                  <option value="185">185</option>
+                  <option value="190">190</option>
+                  <option value="195">195</option>
+                  <option value="200">200</option>
+                  <option value="205">205</option>
+                  <option value="210">210</option>
+                  <option value="215">215</option>
+                  <option value="220">220</option>
+                  <option value="225">225</option>
+                  <option value="230">230</option>
+                  <option value="235">235</option>
+                  <option value="240">240</option>
+                  <option value="245">245</option>
+                  <option value="250">250</option>
+                  <option value="255">255</option>
+                  <option value="260">260</option>
+                  <option value="265">265</option>
+                  <option value="270">270</option>
+                  <option value="275">275</option>
+                  <option value="280">280</option>
+                  <option value="285">285</option>
+                  <option value="290">290</option>
+                  <option value="295">295</option>
+                  <option value="300">300</option>
+                  <option value="305">305</option>
+                  <option value="310">310</option>
+                  <option value="315">315</option>
+                  <option value="320">320</option>
+                  <option value="325">325</option>
+                  <option value="330">330</option>
+                  <option value="335">335</option>
+                  <option value="340">340</option>
+                  <option value="345">345</option>
+                  <option value="350">350</option>
+                  <option value="355">355</option>
+                  <option value="360">360</option>
+                  <option value="365">365</option>
+                  <option value="370">370</option>
+                  <option value="375">375</option>
+                  <option value="380">380</option>
+                  <option value="385">385</option>
+                  <option value="390">390</option>
+                  <option value="395">395</option>
+                  <option value="400">400</option>
+                  <option value="405">405</option>
+                  <option value="410">410</option>
+                  <option value="415">415</option>
+                  <option value="420">420</option>
+                  <option value="425">425</option>
+                  <option value="430">430</option>
+                  <option value="435">435</option>
+                  <option value="440">440</option>
+                  <option value="445">445</option>
+                  <option value="450">450</option>
+                  <option value="455">455</option>
+                  <option value="460">460</option>
+                  <option value="465">465</option>
+                  <option value="470">470</option>
+                  <option value="475">475</option>
+                  <option value="480">480</option>
+                  <option value="485">485</option>
+                  <option value="490">490</option>
+                  <option value="495">495</option>
+                  <option value="500">500</option>
+                  <option value="505">505</option>
+                  <option value="510">510</option>
+                  <option value="515">515</option>
+                  <option value="520">520</option>
+                  <option value="525">525</option>
+                  <option value="530">530</option>
+                  <option value="535">535</option>
+                  <option value="540">540</option>
+                  <option value="545">545</option>
+                  <option value="550">550</option>
+                  <option value="555">555</option>
+                  <option value="560">560</option>
+                  <option value="565">565</option>
+                  <option value="570">570</option>
+                  <option value="575">575</option>
+                  <option value="580">580</option>
+                  <option value="585">585</option>
+                  <option value="590">590</option>
+                  <option value="595">595</option>
+                  <option value="600">600</option>
+                  <option value="605">605</option>
+                  <option value="610">610</option>
+                  <option value="615">615</option>
+                  <option value="620">620</option>
+                  <option value="625">625</option>
+                  <option value="630">630</option>
+                  <option value="635">635</option>
+                  <option value="640">640</option>
+                  <option value="645">645</option>
+                  <option value="650">650</option>
+                  <option value="655">655</option>
+                  <option value="660">660</option>
+                  <option value="665">665</option>
+                  <option value="670">670</option>
+                  <option value="675">675</option>
+                  <option value="680">680</option>
+                  <option value="685">685</option>
+                  <option value="690">690</option>
+                  <option value="695">695</option>
+                  <option value="700">700</option>
+                  <option value="705">705</option>
+                  <option value="710">710</option>
+                  <option value="715">715</option>
+                  <option value="720">720</option>
+                  <option value="725">725</option>
+                  <option value="730">730</option>
+                  <option value="735">735</option>
+                  <option value="740">740</option>
+                  <option value="745">745</option>
+                  <option value="750">750</option>
+                  <option value="755">755</option>
+                  <option value="760">760</option>
+                  <option value="765">765</option>
+                  <option value="770">770</option>
+                  <option value="775">775</option>
+                  <option value="780">780</option>
+                  <option value="785">785</option>
+                  <option value="790">790</option>
+                  <option value="795">795</option>
+                  <option value="800">800</option>
+                  <option value="805">805</option>
+                  <option value="810">810</option>
+                  <option value="815">815</option>
+                  <option value="820">820</option>
+                  <option value="825">825</option>
+                  <option value="830">830</option>
+                  <option value="835">835</option>
+                  <option value="840">840</option>
+                  <option value="845">845</option>
+                  <option value="850">850</option>
+                  <option value="855">855</option>
+                  <option value="860">860</option>
+                  <option value="865">865</option>
+                  <option value="870">870</option>
+                  <option value="875">875</option>
+                  <option value="880">880</option>
+                  <option value="885">885</option>
+                  <option value="890">890</option>
+                  <option value="895">895</option>
+                  <option value="900">900</option>
+                  <option value="905">905</option>
+                  <option value="910">910</option>
+                  <option value="915">915</option>
+                  <option value="920">920</option>
+                  <option value="925">925</option>
+                  <option value="930">930</option>
+                  <option value="935">935</option>
+                  <option value="940">940</option>
+                  <option value="945">945</option>
+                  <option value="950">950</option>
+                  <option value="955">955</option>
+                  <option value="960">960</option>
+                  <option value="965">965</option>
+                  <option value="970">970</option>
+                  <option value="975">975</option>
+                  <option value="980">980</option>
+                  <option value="985">985</option>
+                  <option value="990">990</option>
+                  <option value="995">995</option>
+                  <option value="1000">1000</option>
+                </select>
+                <span class="text-resize">To:</span>
+                <select class="dropdowns-small">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                  <option value="35">35</option>
+                  <option value="40">40</option>
+                  <option value="45">45</option>
+                  <option value="50">50</option>
+                  <option value="55">55</option>
+                  <option value="60">60</option>
+                  <option value="65">65</option>
+                  <option value="70">70</option>
+                  <option value="75">75</option>
+                  <option value="80">80</option>
+                  <option value="85">85</option>
+                  <option value="90">90</option>
+                  <option value="95">95</option>
+                  <option value="100">100</option>
+                  <option value="105">105</option>
+                  <option value="110">110</option>
+                  <option value="115">115</option>
+                  <option value="120">120</option>
+                  <option value="125">125</option>
+                  <option value="130">130</option>
+                  <option value="135">135</option>
+                  <option value="140">140</option>
+                  <option value="145">145</option>
+                  <option value="150">150</option>
+                  <option value="155">155</option>
+                  <option value="160">160</option>
+                  <option value="165">165</option>
+                  <option value="170">170</option>
+                  <option value="175">175</option>
+                  <option value="180">180</option>
+                  <option value="185">185</option>
+                  <option value="190">190</option>
+                  <option value="195">195</option>
+                  <option value="200">200</option>
+                  <option value="205">205</option>
+                  <option value="210">210</option>
+                  <option value="215">215</option>
+                  <option value="220">220</option>
+                  <option value="225">225</option>
+                  <option value="230">230</option>
+                  <option value="235">235</option>
+                  <option value="240">240</option>
+                  <option value="245">245</option>
+                  <option value="250">250</option>
+                  <option value="255">255</option>
+                  <option value="260">260</option>
+                  <option value="265">265</option>
+                  <option value="270">270</option>
+                  <option value="275">275</option>
+                  <option value="280">280</option>
+                  <option value="285">285</option>
+                  <option value="290">290</option>
+                  <option value="295">295</option>
+                  <option value="300">300</option>
+                  <option value="305">305</option>
+                  <option value="310">310</option>
+                  <option value="315">315</option>
+                  <option value="320">320</option>
+                  <option value="325">325</option>
+                  <option value="330">330</option>
+                  <option value="335">335</option>
+                  <option value="340">340</option>
+                  <option value="345">345</option>
+                  <option value="350">350</option>
+                  <option value="355">355</option>
+                  <option value="360">360</option>
+                  <option value="365">365</option>
+                  <option value="370">370</option>
+                  <option value="375">375</option>
+                  <option value="380">380</option>
+                  <option value="385">385</option>
+                  <option value="390">390</option>
+                  <option value="395">395</option>
+                  <option value="400">400</option>
+                  <option value="405">405</option>
+                  <option value="410">410</option>
+                  <option value="415">415</option>
+                  <option value="420">420</option>
+                  <option value="425">425</option>
+                  <option value="430">430</option>
+                  <option value="435">435</option>
+                  <option value="440">440</option>
+                  <option value="445">445</option>
+                  <option value="450">450</option>
+                  <option value="455">455</option>
+                  <option value="460">460</option>
+                  <option value="465">465</option>
+                  <option value="470">470</option>
+                  <option value="475">475</option>
+                  <option value="480">480</option>
+                  <option value="485">485</option>
+                  <option value="490">490</option>
+                  <option value="495">495</option>
+                  <option value="500">500</option>
+                  <option value="505">505</option>
+                  <option value="510">510</option>
+                  <option value="515">515</option>
+                  <option value="520">520</option>
+                  <option value="525">525</option>
+                  <option value="530">530</option>
+                  <option value="535">535</option>
+                  <option value="540">540</option>
+                  <option value="545">545</option>
+                  <option value="550">550</option>
+                  <option value="555">555</option>
+                  <option value="560">560</option>
+                  <option value="565">565</option>
+                  <option value="570">570</option>
+                  <option value="575">575</option>
+                  <option value="580">580</option>
+                  <option value="585">585</option>
+                  <option value="590">590</option>
+                  <option value="595">595</option>
+                  <option value="600">600</option>
+                  <option value="605">605</option>
+                  <option value="610">610</option>
+                  <option value="615">615</option>
+                  <option value="620">620</option>
+                  <option value="625">625</option>
+                  <option value="630">630</option>
+                  <option value="635">635</option>
+                  <option value="640">640</option>
+                  <option value="645">645</option>
+                  <option value="650">650</option>
+                  <option value="655">655</option>
+                  <option value="660">660</option>
+                  <option value="665">665</option>
+                  <option value="670">670</option>
+                  <option value="675">675</option>
+                  <option value="680">680</option>
+                  <option value="685">685</option>
+                  <option value="690">690</option>
+                  <option value="695">695</option>
+                  <option value="700">700</option>
+                  <option value="705">705</option>
+                  <option value="710">710</option>
+                  <option value="715">715</option>
+                  <option value="720">720</option>
+                  <option value="725">725</option>
+                  <option value="730">730</option>
+                  <option value="735">735</option>
+                  <option value="740">740</option>
+                  <option value="745">745</option>
+                  <option value="750">750</option>
+                  <option value="755">755</option>
+                  <option value="760">760</option>
+                  <option value="765">765</option>
+                  <option value="770">770</option>
+                  <option value="775">775</option>
+                  <option value="780">780</option>
+                  <option value="785">785</option>
+                  <option value="790">790</option>
+                  <option value="795">795</option>
+                  <option value="800">800</option>
+                  <option value="805">805</option>
+                  <option value="810">810</option>
+                  <option value="815">815</option>
+                  <option value="820">820</option>
+                  <option value="825">825</option>
+                  <option value="830">830</option>
+                  <option value="835">835</option>
+                  <option value="840">840</option>
+                  <option value="845">845</option>
+                  <option value="850">850</option>
+                  <option value="855">855</option>
+                  <option value="860">860</option>
+                  <option value="865">865</option>
+                  <option value="870">870</option>
+                  <option value="875">875</option>
+                  <option value="880">880</option>
+                  <option value="885">885</option>
+                  <option value="890">890</option>
+                  <option value="895">895</option>
+                  <option value="900">900</option>
+                  <option value="905">905</option>
+                  <option value="910">910</option>
+                  <option value="915">915</option>
+                  <option value="920">920</option>
+                  <option value="925">925</option>
+                  <option value="930">930</option>
+                  <option value="935">935</option>
+                  <option value="940">940</option>
+                  <option value="945">945</option>
+                  <option value="950">950</option>
+                  <option value="955">955</option>
+                  <option value="960">960</option>
+                  <option value="965">965</option>
+                  <option value="970">970</option>
+                  <option value="975">975</option>
+                  <option value="980">980</option>
+                  <option value="985">985</option>
+                  <option value="990">990</option>
+                  <option value="995">995</option>
+                  <option value="1000">1000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item form-headers">Upload CV in word/pdf Format:</div>
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="contact-name" class="labelBox">Document Name:</label><br>
+                <select class="dropdowns" disabled>
+                  <option>CV</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="contact-position" class="labelBox">File: </label><br>
+                <input type="file" id="myfile" name="myfile" class="fileInput">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item form-headers">Upload Profile Picture(optional):</div>
+        <div class="grid-item">
+          <div class="grid-item-flex">
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="contact-name" class="labelBox">Document Name:</label><br>
+                <select class="dropdowns" disabled>
+                  <option>Profile Pic</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-col-1">
+              <div class="inputLabel">
+                <label for="contact-position" class="labelBox">File: </label><br>
+                <input type="file" id="myfile" name="myfile" class="fileInput">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Company Benefits-->
+        <div class="grid-item form-headers">Information Consent:</div>
+        <div class="grid-item">
+
+          <div class="grid-item-flex">
+            <div class="form-col-1 align-left">
+              <div class="inputLabel">
+                <label for="Medical" class="labelBox">
+                  (a) Credit Search on candidates credit profile with a registered credit bureau <span
+                    class="star-span">*</span>
+                </label><br>
+                <div class="radio-style">
+                  <input type="radio" id="html" value="yes">
+                  <label for="html">Yes</label><br>
+                  <input type="radio" value="no">
+                  <label for="css">No</label><br>
+                </div>
+              </div>
+
+              <div class="inputLabel">
+                <label for="hours" class="labelBox">(b)Criminal name clearance check <span class="star-span">*</span>
+                </label><br>
+                <div class="radio-style">
+                  <input type="radio" id="html" value="yes">
+                  <label for="html">Yes</label><br>
+                  <input type="radio" value="no">
+                  <label for="css">No</label><br>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="form-col-1 align-left">
+              <div class="inputLabel">
+                <label for="jobTitle" class="labelBox">(c) Verification of matric and other qualification
+                  check <span class="star-span">*</span></label><br>
+                <div class="radio-style">
+                  <input type="radio" id="html" value="yes">
+                  <label for="html">Yes</label><br>
+                  <input type="radio" value="no">
+                  <label for="css">No</label><br><br>
+                </div>
+              </div>
+              <div class="inputLabel">
+                <label for="jobTitle" class="labelBox">(d) Verify and perform the following checks
+                  check <span class="star-span">*</span></label><br>
+                <div class="radio-style">
+                  <input type="radio" id="html" value="yes">
+                  <label for="html">Yes</label><br>
+                  <input type="radio" value="no">
+                  <label for="css">No</label><br><br>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="grid-item form-headers">reCaptcha:</div>
+          <div class="grid-item">
+
+            <div class="grid-item-flex">
+              <div class="inpputLabel">
+                <div class="g-recaptcha" data-sitekey="6LfpS-kpAAAAADjsC42mBZ2K3mwDxR3tEc5OrY_B"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item form-headers">Information:</div>
+          <div class="grid-item">
+            <div class="grid-item-flex">
+              <div class="informationUL-container">
+                <ul>
+                  <ol>
+                    <li>Disclaimer</li>
+
+                    <li>
+                      I/we acknowledge that the information on the web page is confidential, and I/we undertake to use
+                      the
+                      information only for the purpose of considering the employment of an applicant whose details
+                      appears
+                      on the web page.
+                    </li>
+                    <li>I/we acknowledge that no express or implied representations are made regarding the correctness
+                      of the information, or that it will meet particular criteria of accuracy, completeness or
+                      reliability of information, performance of quality.</li>
+                    <li>We use cookies to give you the best possible browsing experience. by confirming your
+                      registration below you accept our use of cookies to better your experience.</li>
+
+                    <li>UNDERTAKING AND WARRANTY:</li>
+                    <ol type="a">
+                      <li>referring me to a prospective employer;</li>
+                      <li>verifying the correctness of the information contained in this form;</li>
+                      <li>Placing my information (excluding personal information) on its web site for prospective
+                        employers to peruse.</li>
+                    </ol>
+                  </ol>
+                </ul>
+                <div class="inputLabel" style="display: flex;">
+                  <input class=" custom-checkbox" type="checkbox" id="terms" name="terms" value="terms">
+                  <label for="terms"> Accept the <a href="#">terms and conditions</a> THE ABOVE AND BIND MYSELF
+                    IRREVOCABLY.<span style="color:red">*</span> <span class="redColor">(please tick this box if you
+                      agree. If you do not
+                      agree
+                      you may not continue with this registration.)</span></label> <br>
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </div>
+          <div style="width:80%; margin: 0 auto 0 auto;">
+            <div style="margin-right: 100%;">
+              <button class="submit-btn" href="#">Submit</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h6 class="modalHeader">Candidate/Employer Login</h6>
+        <div class="modalInputContainer">
+          <input class="modalInput" placeholder="User Name">
+          <input class="modalInput" input type="password" placeholder="Password">
+          <button class="goBtn" href="#">GO</button>
+          <div style="display: flex; flex-direction: row;justify-content: space-between; margin-top: 10px;">
+            <button class="modalBtns" style="background-color: #150E56;">Register</button>
+            <button class="modalBtns" style="background-color:#7B113A">Forgot Password?</button>
+          </div>
+          <div style="text-align: left; margin-top: 10px; font-size: 12px; font-weight: bold;">
+            <p>By signing in, you agree to the T's & C's. </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-col-container">
+        <div class="footer-col">
+          <h6>Remote Personnel</h6>
+          <div class="icons-container">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="footer-icon"
+                height="30px"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#f6f4eb"
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+              </svg>
+            </a>
+
+
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#f6f4eb"
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon"
+                viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#f6f4eb"
+                  d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+              </svg>
+            </a>
+          </div>
+
+
+        </div>
+
+        <div class="footer-col footer-col2">
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="pdf/Amended_Basic_Conditions_of_Employment_Act.pdf">Basic Conditions Of Employment</a>
+          <a href="pdf/PAIA_POPIA_manual_Total_Recruitment_Solutions.pdf">Popi</a>
+          <a href="userTerms.html">User Terms</a>
+        </div>
+
+        <div class="footer-col footer-col2">
+          <h6>Contact Us</h6>
+          <p>Email: <a href="#">info@remotepersonnel.net</a></p>
+          <p>Office: <a href="#">+27 11 970 3166</a></p>
+          <a href="#" style="font-weight: bold;">Powered By TRS</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <hr size="1">
+        <p style="margin-top: 10px;">&#169; 2024 All rights reserved</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
