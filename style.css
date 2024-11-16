@@ -1094,12 +1094,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .candidate-img {
-    width: 150px;
-    height: 150px;
-  }
-}
 
 @media screen and (max-width: 390px) {
   .rightSideCard {
