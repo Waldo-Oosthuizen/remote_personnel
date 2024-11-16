@@ -1060,6 +1060,12 @@ nav {
     margin-top: 10px;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
   .candidate-card {
     height: 450px;
   }
