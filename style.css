@@ -288,9 +288,9 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
   height: auto;
+  margin: auto auto auto auto;
 }
 
 .form {
@@ -537,7 +537,6 @@ nav {
 
 .header {
   width: 90vw;
-  height: auto;
   padding-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -555,9 +554,6 @@ nav {
   height: 60vh;
 }
 
-.header h1 {
-  font-size: 35px;
-}
 
 .grid-container {
   display: grid;
@@ -1006,18 +1002,7 @@ nav {
     width: 45%;
   }
 
-  .header {
-    width: 70vw;
-    backdrop-filter: blur(4px);
-    padding: 60px;
-    padding-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    text-align: left;
-    display: flex;
-  }
+
 
   .jobseekers-div {
     height: 70vh;
@@ -1043,6 +1028,7 @@ nav {
 
   .hero-text {
     text-align: center;
+    font-size: 0.8rem;
   }
 
   .hero {
@@ -1097,6 +1083,15 @@ nav {
 
   .jobseekers-div {
     height: 100vh;
+  }
+
+  .header {
+    margin-top: 6%;
+    width: 80%;
+  }
+
+  .header h1{
+    font-size: 2rem;
   }
 
   /*Equiries radio btns*/
