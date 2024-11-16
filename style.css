@@ -228,7 +228,7 @@ nav {
   flex: 1;
   color: #111;
   font-size: 1.5rem;
-  min-width: 250px; /* Ensures a minimum width for the text */
+  min-width: 250px; 
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 5px;
@@ -468,7 +468,7 @@ nav {
   height: auto;
   background-color: #7b113a;
   padding: 30px;
-  margin-top: auto;
+  margin-top: 200px;
 }
 
 .footer-col-container {
@@ -552,10 +552,6 @@ nav {
   font-size: 3rem;
 }
 
-.jobseekers-div {
-  height: 60vh;
-}
-
 
 .grid-container {
   display: grid;
@@ -597,11 +593,6 @@ nav {
 
 
 
-.jobs-header-text h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .inputLabel textarea {
   width: 100%;
 }
@@ -609,7 +600,7 @@ nav {
 .cards-container {
   display: flex;
   gap: 50px;
-  animation: scroll 90s linear infinite;
+  animation: scroll 190s linear infinite;
   width: max-content;
   cursor: pointer;
 }
