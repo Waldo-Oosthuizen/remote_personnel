@@ -242,6 +242,25 @@ nav {
   margin-right: auto;
 }
 
+.text-style {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-style p, h5{
+  text-align: center;
+  overflow-wrap: break-all;
+}
+
+.text-style p{
+  font-size: 16px;
+}
+
+.text-h5{
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
 .hero-btn,
 .nav-btn {
   border: none;
@@ -404,6 +423,8 @@ nav {
   width: 100%;
   height: 200px;
   border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .checked {
@@ -939,12 +960,7 @@ nav {
     margin-left: auto;
   }
 
-  .text-style {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
+
 
   .btn-prev {
     font-size: 30px;

@@ -1,7 +1,7 @@
 /*Navbar */
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+
 
 hamburger.addEventListener("click", () => {
   //Animate Links
@@ -17,16 +17,15 @@ navLinks.addEventListener("click", () => {
   hamburger.classList.remove("toggle");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const currentLocation = window.location.pathname.split("/").pop();
-  const navLinks = document.querySelectorAll(".nav-links li a");
-
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href").includes(currentLocation)) {
-      link.classList.add("active");
+const links = document.querySelectorAll('.nav-links li a');
+links.forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
+    } else {
+        link.classList.remove('active');
     }
-  });
 });
+
 //Modal
 
 // Get the modal
